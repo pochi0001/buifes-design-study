@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ぶいふぇす | FOOD</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQM8N02W8X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TQM8N02W8X');
+  </script>
+
+  <!-- favicon -->
+  <link rel="icon" href="./img/builogo.jpg">
+  <link rel="apple-touch-icon" href="./img/builogo.jpg">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="page-food">
+
+  <div class="vfesBubbles"></div>
+
+  <!-- Loader -->
+  <div class="cfLoader" id="cfLoader" aria-hidden="true">
+    <div class="cfLoaderInner">
+      <div class="cfLoaderLogo">ぶいふぇす</div>
+      <div class="cfLoaderSpinner"></div>
+      <div class="cfLoaderSub">MUSIC & FOOD FESTIVAL</div>
+    </div>
+  </div>
+
+      <!-- HEADER -->
+      <header class="cfHeader">
+        <div class="cfHeaderInner">
+          <a class="cfLogo" href="./index.html" aria-label="トップへ">
+            <img
+              src="./img/builogo.jpg"
+              alt="ぶいふぇす ロゴ"
+              class="cfLogoImg"
+              loading="lazy"
+            >
+            <span class="cfLogoText">
+              <span class="cfLogoMain">ぶいふぇす</span>
+              <span class="cfLogoSub">MUSIC & FOOD FESTIVAL</span>
+            </span>
+          </a>
+
+          <nav class="cfNav" aria-label="グローバルナビ">
+            <a href="./tickets.html">TICKET</a>
+            <a href="./artists.html">ARTISTS</a>
+            <a href="./food.html">FOOD</a>
+            <a href="./access.html">ACCESS</a>
+          </nav>
+
+          <button class="cfMenuBtn" id="menuBtn" aria-label="メニュー" aria-expanded="false">
+            <span class="cfMenuIcon" aria-hidden="true"></span>
+            <span class="cfMenuText">MENU</span>
+          </button>
+
+          <!-- X -->
+          <a class="cfHeaderX" href="https://x.com/vfes_official_" target="_blank" rel="noopener" aria-label="ぶいふぇす公式X">
+            <span class="cfXIcon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <path d="M18.244 2H21l-6.56 7.497L22.154 22h-6.037l-4.728-6.184L5.98 22H3.22l7.016-8.017L1.846 2h6.19l4.274 5.649L18.244 2Zm-1.058 18h1.673L7.128 3.895H5.334L17.186 20Z"/>
+              </svg>
+            </span>
+          </a>
+
+          <!-- Instagram -->
+          <a class="cfHeaderInstagram"
+            href="https://www.instagram.com/ke_vfes/"
+            target="_blank" rel="noopener">
+            <span class="cfInstaIcon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22">
+                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/>
+              </svg>
+            </span>
+            <span class="cfInstaText">Instagram</span>
+          </a>
+
+        </div>
+      </header>
+
+  <!-- DRAWER -->
+  <div class="cfDrawer" id="drawer" hidden>
+    <div class="cfDrawerInner">
+      <a href="index.html">TOP</a>
+      <a href="info.html">ABOUT</a>
+      <a href="artists.html">ARTISTS</a>
+      <a href="food.html">FOOD</a>
+      <a href="tickets.html">TICKET</a>
+      <a href="access.html">ACCESS</a>
+      <a
+        href="https://www.instagram.com/ke_vfes/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cfDrawerInstagram"
+      >
+        INSTAGRAM
+      </a>
+      <a
+        href="https://x.com/vfes_official_"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cfDrawerX"
+      >
+        X
+      </a>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main>
+    <div class="cfPageHero">
+      <div class="cfPageInner">
+        <p class="cfBreadcrumb"><a href="index.html">TOP</a> / FOOD</p>
+        <h1 class="cfPageTitle">FOOD</h1>
+      </div>
+    </div>
+
+    <section class="cfSection cfListSection" style="padding-top:0;">
+      <div class="cfWrap">
+        <div class="cfFoodGrid" id="foodGrid"></div>
+
+        <p class="cfAndMore">and more...</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+    <footer class="cfFooterSimple">
+      <div class="cfFooterSimpleInner">
+        <nav class="cfFooterPolicy">
+          <a href="privacy.html">プライバシーポリシー</a>
+          <span>/</span>
+          <a href="terms.html">利用規約</a>
+          <span>/</span>
+          <a href="contact.html">お問い合わせ</a>
+        </nav>
+
+        <a
+          href="https://x.com/vfes_official_"
+          class="cfFooterX"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="ぶいふぇす公式X">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18.244 2H21l-6.56 7.497L22.154 22h-6.037l-4.728-6.184L5.98 22H3.22l7.016-8.017L1.846 2h6.19l4.274 5.649L18.244 2Zm-1.058 18h1.673L7.128 3.895H5.334L17.186 20Z"/>
+          </svg>
+        </a>
+
+          <a
+            href="https://www.instagram.com/ke_vfes/"
+            class="cfFooterInstagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="ぶいふぇす公式Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 12 17a4.5 4.5 0 0 0 0-9zm0 7.3a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6zM17.5 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+            </svg>
+          </a>
+
+        <p class="cfFooterCopy">
+          © 2026 ぶいふぇす
+        </p>
+      </div>
+    </footer>
+
+  <script src="./main.js"></script>
+
+  <!-- ✅ FOOD自動生成（このページ専用） -->
+  <script>
+    // 画像が未確定なら placeholder を使う
+    const PLACEHOLDER_IMG = "./img/food-placeholder.jpg";
+
+    // ✅ 店舗を増やす時はここに1行足すだけ
+    // img: 実画像のパスに差し替えOK
+    // tags: メニュー（配列）
+    // instagram: 無ければ "" にする（準備中表示になる）
+    const FOODS = [
+      {
+        id: "careno",
+        name: "カレのカレー",
+        img: "./img/food/careno-curry.jpg",
+        tags: ["カレー"],
+        instagram: "https://www.instagram.com/careno_curry/"
+      },
+      {
+        id: "girasole",
+        name: "'O Girasole",
+        img: "./img/food/girasole-pizza.jpg",
+        tags: ["ピザ"],
+        instagram: "https://www.instagram.com/o.girasole/",
+        pos: "50% 100%"
+      },
+      {
+        id: "otoppe",
+        name: "おとっぺ",
+        img: "/img/food/otoppe.jpg",
+        tags: ["ソーセージ", "ベーコン"],
+        instagram: "https://www.instagram.com/oyama.otoppe/"
+      },
+      {
+        id: "shikisaikan",
+        name: "小山市まちの駅 思季彩館",
+        img:"/img/food/sikisaikan.jpg",
+        tags: ["クラフトビール"],
+        instagram: "https://www.instagram.com/shikisaikan.808/"
+      },
+      {
+        id: "adorer",
+        name: "crepe Adorer",
+        img:"/img/food/crepe-adorer.jpg",
+        tags: ["クレープ"],
+        instagram: "https://www.instagram.com/crepe_adorer/"
+      },
+      {
+        id: "eazy",
+        name: "EAZY PIZZA",
+        img: "./img/food/eazy-pizza2.jpg",
+        tags: ["タコライス"],
+        instagram: "https://www.instagram.com/eazy_pizza_jp/"
+      },
+      {
+        id: "bunsweets",
+        name: "Bun Sweets",
+        img: "./img/food/bunsweets.jpg",
+        tags: ["リンゴ飴","ワッフル"],
+        instagram: "https://www.instagram.com/bun_sweets/"
+      },
+      {
+        id: "agopakkan",
+        name: "あごぱっかーん",
+        img: "./img/food/agopakkan.jpg",
+        tags: ["ハンバーガー"],
+        instagram: "https://www.instagram.com/agopakkan/"
+      },
+      {
+        id: "ichigonosato",
+        name: "いちごの里ファーム",
+        img: "./img/food/ichigonosato.jpg",
+        tags: ["クレープ", "スムージー"],
+        instagram: "https://www.instagram.com/itigonosatofarm/",
+        fit: "contain"
+      },
+      {
+        id: "maruta",
+        name: "酒食 まるた",
+        img: "./img/food/maruta.jpg",
+        tags: ["芋フライ","唐揚げ"],
+        instagram: "https://www.instagram.com/syusyokumaruta/"
+      },
+      {
+        id: "usiyanosegare",
+        name: "うしやのせがれ",
+        img: "./img/food/usiyanosegare.png",
+        tags: ["ハンバーガー"],
+        instagram: "https://www.instagram.com/usyn_ksgr?igsh=NWphdzE0Zno0M2Qy",
+        fit: "cover",
+        pos: "50% 45%"
+      },
+      {
+        id: "inase",
+        name: "和処いなせ",
+        img: "./img/food/inase.jpg",
+        tags: ["coming soon"],
+        instagram: "https://www.instagram.com/nagomidoko_inase/",
+        fit: "contain",
+        pos: "50% 50%"
+      },
+      {
+        id: "ao",
+        name: "藍",
+        img: "./img/food/ao2.jpg",
+        tags: ["お好み焼き", "オムそば"],
+        instagram: "https://www.instagram.com/daotianzhenlidaotian?igsh=MTl6ejBna214eGVsdg==",
+        fit: "cover",
+        pos: "50% 50%"
+      }
+    ];
+
+    const IG_SVG = `
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 12 17a4.5 4.5 0 0 0 0-9zm0 7.3a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6zM17.5 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+      </svg>
+    `;
+
+    function escapeHtml(str){
+      return String(str)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#39;");
+    }
+
+    function renderFoodCard(item){
+      const name = escapeHtml(item.name);
+      const img = escapeHtml(item.img || PLACEHOLDER_IMG);
+      const pos = (item.pos || "").trim();
+      const fit = item.fit || "cover";
+      const thumbClass = fit === "contain" ? "cfFoodThumb is-contain" : "cfFoodThumb";
+
+      const posAttr = pos
+        ? ` style="object-fit:${fit}; object-position:${escapeHtml(pos)};"`
+        : ` style="object-fit:${fit};"`;
+
+      const tags = Array.isArray(item.tags) ? item.tags : [];
+      const ig = (item.instagram || "").trim();
+
+      const tagHtml = tags.map(t => `<span class="cfTag">${escapeHtml(t)}</span>`).join("");
+
+      const igHtml = ig
+        ? `
+          <a class="cfFoodInstaBtn"
+            href="${escapeHtml(ig)}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="${name}のInstagramを見る">
+            <span class="cfFoodInstaBtnIcon" aria-hidden="true">${IG_SVG}</span>
+            <span class="cfFoodInstaBtnText">Instagram</span>
+            <span class="cfFoodInstaBtnArrow" aria-hidden="true">↗</span>
+          </a>
+        `
+        : `
+          <div class="cfFoodInstaBtn is-disabled" aria-label="${name}のInstagramは準備中です">
+            <span class="cfFoodInstaBtnIcon" aria-hidden="true">${IG_SVG}</span>
+            <span class="cfFoodInstaBtnText">Instagram（準備中）</span>
+          </div>
+        `;
+
+      return `
+        <article class="cfFoodCard">
+          <div class="${thumbClass}">
+            <img src="${img}" alt="${name}" loading="lazy"${posAttr}>
+          </div>
+
+          <div class="cfFoodBody">
+            <h3 class="cfFoodName">${name}</h3>
+
+            ${igHtml}
+
+            <div class="cfFoodMeta">
+              <div class="cfFoodMetaLabel">メニュー</div>
+              <div class="cfFoodMetaValue">${tagHtml}</div>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    const grid = document.getElementById("foodGrid");
+    if (grid){
+      grid.innerHTML = FOODS.map(renderFoodCard).join("");
+    }
+  </script>
+</body>
+</html>

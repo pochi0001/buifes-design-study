@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ぶいふぇす | ACCESS</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQM8N02W8X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TQM8N02W8X');
+  </script>
+
+  <link rel="icon" href="./img/builogo.jpg">
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="page-access">
+
+  <div class="vfesBubbles"></div>
+  
+  <div class="cfLoader" id="cfLoader" aria-hidden="true">
+    <div class="cfLoaderInner">
+      <div class="cfLoaderLogo">ぶいふぇす</div>
+
+      <!-- ★ 追加：くるくる -->
+      <div class="cfLoaderSpinner"></div>
+
+      <div class="cfLoaderSub">MUSIC & FOOD FESTIVAL</div>
+    </div>
+  </div>
+
+    <!-- HEADER -->
+    <header class="cfHeader">
+      <div class="cfHeaderInner">
+        <a class="cfLogo" href="./index.html" aria-label="トップへ">
+          <img
+            src="./img/builogo.jpg"
+            alt="ぶいふぇす ロゴ"
+            class="cfLogoImg"
+            loading="lazy"
+          >
+          <span class="cfLogoText">
+            <span class="cfLogoMain">ぶいふぇす</span>
+            <span class="cfLogoSub">MUSIC & FOOD FESTIVAL</span>
+          </span>
+        </a>
+
+        <nav class="cfNav" aria-label="グローバルナビ">
+          <a href="./tickets.html">TICKET</a>
+          <a href="./artists.html">ARTISTS</a>
+          <a href="./food.html">FOOD</a>
+          <a href="./access.html">ACCESS</a>
+        </nav>
+
+        <button class="cfMenuBtn" id="menuBtn" aria-label="メニュー" aria-expanded="false">
+          <span class="cfMenuIcon" aria-hidden="true"></span>
+          <span class="cfMenuText">MENU</span>
+        </button>
+
+        <!-- X -->
+        <a class="cfHeaderX" href="https://x.com/vfes_official_" target="_blank" rel="noopener" aria-label="ぶいふぇす公式X">
+          <span class="cfXIcon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path d="M18.244 2H21l-6.56 7.497L22.154 22h-6.037l-4.728-6.184L5.98 22H3.22l7.016-8.017L1.846 2h6.19l4.274 5.649L18.244 2Zm-1.058 18h1.673L7.128 3.895H5.334L17.186 20Z"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Instagram -->
+        <a class="cfHeaderInstagram"
+          href="https://www.instagram.com/ke_vfes/"
+          target="_blank" rel="noopener">
+          <span class="cfInstaIcon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22">
+              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/>
+            </svg>
+          </span>
+          <span class="cfInstaText">Instagram</span>
+        </a>
+
+      </div>
+    </header>
+
+  <!-- DRAWER -->
+  <div class="cfDrawer" id="drawer" hidden>
+    <!-- <button class="cfDrawerClose" id="drawerClose" aria-label="メニューを閉じる">
+      ×
+    </button> -->
+
+    <div class="cfDrawerInner">
+      <a href="index.html">TOP</a>
+      <a href="info.html">ABOUT</a>
+      <a href="artists.html">ARTISTS</a>
+      <a href="food.html">FOOD</a>
+      <a href="tickets.html">TICKET</a>
+      <a href="access.html">ACCESS</a>
+      <a
+        href="https://www.instagram.com/ke_vfes/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cfDrawerInstagram"
+      >
+        INSTAGRAM
+      </a>
+      <a
+        href="https://x.com/vfes_official_"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cfDrawerX"
+      >
+        X
+      </a>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main>
+  <!-- パンくず＋ページタイトル -->
+  <div class="cfPageHero">
+    <div class="cfPageInner">
+      <p class="cfBreadcrumb">
+        <a href="index.html">TOP</a> / ACCESS
+      </p>
+      <h1 class="cfPageTitle">ACCESS</h1>
+    </div>
+  </div>
+
+  <!-- ACCESS 本文 -->
+  <section class="cfSection" id="access" style="padding-top:0;">
+    <div class="cfWrap">
+
+      <!-- 会場 -->
+      <div class="cfAccessSimple">
+        <h3 class="cfAccessH3">会場</h3>
+        <div class="cfAccessPlace">小山御殿広場</div>
+        <div class="cfAccessAddr">
+          〒323-0023 栃木県小山市中央町1-1-1
+        </div>
+      </div>
+
+      <!-- 会場マップ -->
+      <div class="cfMapSimple">
+        <iframe
+          title="小山御殿広場 地図"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=%E3%80%92323-0023%20%E6%A0%83%E6%9C%A8%E7%9C%8C%E5%B0%8F%E5%B1%B1%E5%B8%82%E4%B8%AD%E5%A4%AE%E7%94%BA1-1&output=embed">
+        </iframe>
+      </div>
+
+      <div class="cfAccessDivider"></div>
+
+      <!-- 電車 -->
+      <div class="cfAccessSimple">
+        <h3 class="cfAccessH3">電車でのご来場</h3>
+        <div class="cfAccessText">
+          JR東北本線（宇都宮線）小山駅から徒歩約8分
+        </div>
+
+        <div class="cfMapSimple cfMapSimple--mini">
+          <iframe
+            title="小山駅 地図"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=JR%E5%B0%8F%E5%B1%B1%E9%A7%85&output=embed">
+          </iframe>
+        </div>
+
+        <a
+          class="cfAccessLink"
+          href="https://www.google.com/maps/dir/?api=1&origin=JR%E5%B0%8F%E5%B1%B1%E9%A7%85&destination=%E5%B0%8F%E5%B1%B1%E5%BE%A1%E6%AE%BF%E5%BA%83%E5%A0%B4&travelmode=walking"
+          target="_blank"
+          rel="noopener">
+          徒歩ルートを見る
+        </a>
+      </div>
+
+      <div class="cfAccessDivider"></div>
+
+      <!-- 車 -->
+      <div class="cfAccessSimple">
+        <h3 class="cfAccessH3">車でのご来場</h3>
+        <div class="cfAccessText">
+          小山市役所駐車場（約600台）
+        </div>
+
+        <div class="cfMapSimple cfMapSimple--mini">
+          <iframe
+            title="小山市役所 地図"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=%E5%B0%8F%E5%B1%B1%E5%B8%82%E5%BD%B9%E6%89%80&output=embed">
+          </iframe>
+        </div>
+
+        <a
+          class="cfAccessLink"
+          href="https://www.google.com/maps/search/?api=1&query=%E5%B0%8F%E5%B1%B1%E5%B8%82%E5%BD%B9%E6%89%80"
+          target="_blank"
+          rel="noopener">
+          小山市役所をGoogleマップで開く
+        </a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+  <!-- FOOTER -->
+    <footer class="cfFooterSimple">
+      <div class="cfFooterSimpleInner">
+        <nav class="cfFooterPolicy">
+          <a href="privacy.html">プライバシーポリシー</a>
+          <span>/</span>
+          <a href="terms.html">利用規約</a>
+          <span>/</span>
+          <a href="contact.html">お問い合わせ</a>
+        </nav>
+
+        <a
+          href="https://x.com/vfes_official_"
+          class="cfFooterX"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="ぶいふぇす公式X">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18.244 2H21l-6.56 7.497L22.154 22h-6.037l-4.728-6.184L5.98 22H3.22l7.016-8.017L1.846 2h6.19l4.274 5.649L18.244 2Zm-1.058 18h1.673L7.128 3.895H5.334L17.186 20Z"/>
+          </svg>
+        </a>
+
+          <a
+            href="https://www.instagram.com/ke_vfes/"
+            class="cfFooterInstagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="ぶいふぇす公式Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 12 17a4.5 4.5 0 0 0 0-9zm0 7.3a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6zM17.5 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+            </svg>
+          </a>
+
+        <p class="cfFooterCopy">
+          © 2026 ぶいふぇす
+        </p>
+      </div>
+    </footer>
+
+<script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ぶいふぇす | TICKET</title>
+  <meta name="description" content="ぶいふぇす2026のチケット情報ページです。S席・A席・立ち見席の価格、特典、会場図、注意事項をご案内しています。" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQM8N02W8X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TQM8N02W8X');
+  </script>
+
+  <link rel="icon" href="./img/builogo.jpg">
+  <link rel="stylesheet" href="./style.css?v=20260330-ticket" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="page-ticket">
+
+  <div class="vfesBubbles"></div>
+
+  <div class="cfLoader" id="cfLoader" aria-hidden="true">
+    <div class="cfLoaderInner">
+      <div class="cfLoaderLogo">ぶいふぇす</div>
+      <div class="cfLoaderSpinner"></div>
+      <div class="cfLoaderSub">MUSIC & FOOD FESTIVAL</div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="cfHeader">
+    <div class="cfHeaderInner">
+      <a class="cfLogo" href="./index.html" aria-label="トップへ">
+        <img
+          src="./img/builogo.jpg"
+          alt="ぶいふぇす ロゴ"
+          class="cfLogoImg"
+          loading="lazy"
+        >
+        <span class="cfLogoText">
+          <span class="cfLogoMain">ぶいふぇす</span>
+          <span class="cfLogoSub">MUSIC & FOOD FESTIVAL</span>
+        </span>
+      </a>
+
+      <nav class="cfNav" aria-label="グローバルナビ">
+        <a href="./tickets.html">TICKET</a>
+        <a href="./artists.html">ARTISTS</a>
+        <a href="./food.html">FOOD</a>
+        <a href="./access.html">ACCESS</a>
+      </nav>
+
+      <button class="cfMenuBtn" id="menuBtn" aria-label="メニュー" aria-expanded="false">
+        <span class="cfMenuIcon" aria-hidden="true"></span>
+        <span class="cfMenuText">MENU</span>
+      </button>
+
+      <a class="cfHeaderX" href="https://x.com/vfes_official_" target="_blank" rel="noopener" aria-label="ぶいふぇす公式X">
+        <span class="cfXIcon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M18.244 2H21l-6.56 7.497L22.154 22h-6.037l-4.728-6.184L5.98 22H3.22l7.016-8.017L1.846 2h6.19l4.274 5.649L18.244 2Zm-1.058 18h1.673L7.128 3.895H5.334L17.186 20Z"/>
+          </svg>
+        </span>
+      </a>
+
+      <a class="cfHeaderInstagram"
+        href="https://www.instagram.com/ke_vfes/"
+        target="_blank" rel="noopener">
+        <span class="cfInstaIcon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/>
+          </svg>
+        </span>
+        <span class="cfInstaText">Instagram</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- DRAWER -->
+  <div class="cfDrawer" id="drawer" hidden>
+    <div class="cfDrawerInner">
+      <a href="index.html">TOP</a>
+      <a href="info.html">ABOUT</a>
+      <a href="artists.html">ARTISTS</a>
+      <a href="food.html">FOOD</a>
+      <a href="tickets.html">TICKET</a>
+      <a href="access.html">ACCESS</a>
+      <a
+        href="https://www.instagram.com/ke_vfes/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cfDrawerInstagram"
+      >
+        INSTAGRAM
+      </a>
+      <a
+        href="https://x.com/vfes_official_"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cfDrawerX"
+      >
+        X
+      </a>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main>
+    <div class="cfPageHero">
+      <div class="cfPageInner">
+        <p class="cfBreadcrumb"><a href="index.html">TOP</a> / TICKET</p>
+        <h1 class="cfPageTitle">TICKET</h1>
+        <p class="cfPageLead">
+          2026年5月5日開催「ぶいふぇす」のチケット情報です。<br>
+          前売券は当日券よりお得にご購入いただけます。
+        </p>
+      </div>
+    </div>
+
+    <!-- intro -->
+    <section class="cfSection">
+      <div class="cfWrap">
+        <div class="ticketHeroBox">
+          <div class="ticketHeroText">
+            <p class="ticketEyebrow">2026.05.05 TICKET INFORMATION</p>
+            <h2 class="ticketHeroTitle">前売券は最大 <span>1,800円お得</span></h2>
+            <p class="ticketHeroDesc">
+              S席・A席・立ち見席をご用意しています。<br>
+              会場図と特典内容をご確認のうえ、お好みの席種をお選びください。
+            </p>
+
+            <div class="ticketHeroNotice">
+              <strong>当日券について</strong><br>
+              当日販売は <b>5月5日</b> を予定しています。
+            </div>
+
+            <div class="cfNoticeBtns">
+              <!-- TIGETのURLが決まったら差し替え -->
+              <a class="cfBtn" href="#" target="_blank" rel="noopener noreferrer">TIGETで購入する</a>
+              <a class="cfBtnOutline" href="#seatmap">会場図を見る</a>
+            </div>
+          </div>
+
+          <div class="ticketHeroMini">
+            <div class="ticketMiniCard">
+              <div class="ticketMiniLabel">前売販売価格</div>
+              <div class="ticketMiniRow">S席 <span>13,200円（税込）</span></div>
+              <div class="ticketMiniRow">A席 <span>8,800円（税込）</span></div>
+              <div class="ticketMiniRow">立ち見 <span>3,300円（税込）</span></div>
+            </div>
+
+            <div class="ticketMiniCard ticketMiniCardSub">
+              <div class="ticketMiniLabel">当日販売価格</div>
+              <div class="ticketMiniRow">S席 <span>15,000円（税込）</span></div>
+              <div class="ticketMiniRow">A席 <span>10,000円（税込）</span></div>
+              <div class="ticketMiniRow">立ち見 <span>3,500円（税込）</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- price cards -->
+    <section class="cfSection">
+      <div class="cfWrap">
+        <div class="ticketSectionHead">
+          <p class="ticketSectionSub">SEAT TYPE</p>
+          <h2 class="ticketSectionTitle">席種・価格一覧</h2>
+        </div>
+
+        <div class="ticketGrid">
+          <article class="ticketCard ticketCardS">
+            <div class="ticketCardBadge">S SEAT</div>
+            <h3 class="ticketCardTitle">S席</h3>
+            <p class="ticketCardLead">ステージ最前エリア / ステージまで約2m</p>
+
+            <div class="ticketPriceBlock">
+              <div class="ticketPriceLabel">前売</div>
+              <div class="ticketPriceMain">13,200<span>円（税込）</span></div>
+              <div class="ticketPriceSub">税抜 12,000円</div>
+            </div>
+
+            <div class="ticketPriceBlock ticketPriceBlockSub">
+              <div class="ticketPriceLabel">当日</div>
+              <div class="ticketPriceMain small">15,000<span>円（税込）</span></div>
+            </div>
+
+            <ul class="ticketFeatures">
+              <li>シート席</li>
+              <li>ステージ最前エリア</li>
+              <li>公式エコバッグ付き</li>
+              <li>公式ステッカー付き</li>
+            </ul>
+          </article>
+
+          <article class="ticketCard ticketCardA">
+            <div class="ticketCardBadge">A SEAT</div>
+            <h3 class="ticketCardTitle">A席</h3>
+            <p class="ticketCardLead">ステージ近距離エリア / ステージまで約7m</p>
+
+            <div class="ticketPriceBlock">
+              <div class="ticketPriceLabel">前売</div>
+              <div class="ticketPriceMain">8,800<span>円（税込）</span></div>
+              <div class="ticketPriceSub">税抜 8,000円</div>
+            </div>
+
+            <div class="ticketPriceBlock ticketPriceBlockSub">
+              <div class="ticketPriceLabel">当日</div>
+              <div class="ticketPriceMain small">10,000<span>円（税込）</span></div>
+            </div>
+
+            <ul class="ticketFeatures">
+              <li>シート席</li>
+              <li>ステージ近距離エリア</li>
+              <li>公式ステッカー付き</li>
+            </ul>
+          </article>
+
+          <article class="ticketCard ticketCardStand">
+            <div class="ticketCardBadge">STANDING</div>
+            <h3 class="ticketCardTitle">立ち見席</h3>
+            <p class="ticketCardLead">後方フリー観覧エリア</p>
+
+            <div class="ticketPriceBlock">
+              <div class="ticketPriceLabel">前売</div>
+              <div class="ticketPriceMain">3,300<span>円（税込）</span></div>
+              <div class="ticketPriceSub">税抜 3,000円</div>
+            </div>
+
+            <div class="ticketPriceBlock ticketPriceBlockSub">
+              <div class="ticketPriceLabel">当日</div>
+              <div class="ticketPriceMain small">3,500<span>円（税込）</span></div>
+            </div>
+
+            <ul class="ticketFeatures">
+              <li>後方フリー観覧エリア</li>
+              <li>気軽に楽しみたい方向け</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- seat map -->
+    <section class="cfSection" id="seatmap">
+      <div class="cfWrap">
+        <div class="ticketSectionHead">
+          <p class="ticketSectionSub">SEAT MAP</p>
+          <h2 class="ticketSectionTitle">会場図</h2>
+          <p class="ticketSectionText">
+            S席・A席はシート席、立ち見席は後方エリアとなります。<br>
+            ステージとの距離やエリアの違いをご確認ください。
+          </p>
+        </div>
+
+        <figure class="ticketSeatmap">
+          <img src="./img/buifes-livearea.jpg" alt="ぶいふぇす 会場図 S席・A席・立ち見席の配置図" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- goods -->
+    <section class="cfSection">
+      <div class="cfWrap">
+        <div class="ticketSectionHead">
+          <p class="ticketSectionSub">TICKET BONUS</p>
+          <h2 class="ticketSectionTitle">特典グッズ</h2>
+          <p class="ticketSectionText">
+            S席ご購入の方には公式エコバッグと公式ステッカー、A席ご購入の方には公式ステッカーを当日会場にてお渡しします。
+          </p>
+        </div>
+
+        <div class="ticketBonusGrid">
+          <article class="ticketBonusCard">
+            <div class="ticketBonusImg">
+              <img src="./img/buifes-ecobag.jpg" alt="ぶいふぇす公式エコバッグ イメージ" loading="lazy">
+            </div>
+            <div class="ticketBonusBody">
+              <h3>ぶいふぇす公式エコバッグ</h3>
+              <p>S席特典</p>
+            </div>
+          </article>
+
+          <article class="ticketBonusCard">
+            <div class="ticketBonusImg">
+              <img src="./img/buifes-sticker.jpg" alt="ぶいふぇす公式ステッカー イメージ" loading="lazy">
+            </div>
+            <div class="ticketBonusBody">
+              <h3>ぶいふぇす公式ステッカー</h3>
+              <p>S席 / A席 特典</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="ticketGiftNote">
+          ※ デザインはイメージです。<br>
+          完成品は、特別出演のアイドル枠を除く出演者様全員をSDキャラにて掲載予定です。<br>
+          ※ 特典は当日会場にてお渡しします。
+        </div>
+      </div>
+    </section>
+
+    <!-- notes -->
+    <section class="cfSection">
+      <div class="cfWrap">
+        <div class="ticketSectionHead">
+          <p class="ticketSectionSub">GUIDE</p>
+          <h2 class="ticketSectionTitle">チケットに関するご案内</h2>
+        </div>
+
+        <div class="ticketGuideBox">
+          <ul class="ticketGuideList">
+            <li>当日券の販売は <strong>2026年5月5日</strong> を予定しております。</li>
+            <li>前売券は当日券よりお得にご購入いただけます。</li>
+            <li>購入後のキャンセル・返金は原則できません。</li>
+            <li>やむを得ない事情がある場合はお問い合わせください。</li>
+            <li>イベント内容・出演者・販売内容は変更となる場合があります。</li>
+          </ul>
+        </div>
+
+        <div class="ticketBottomCta">
+          <a class="cfBtn" href="#" target="_blank" rel="noopener noreferrer">TIGETで購入する</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="cfFooterSimple">
+    <div class="cfFooterSimpleInner">
+      <nav class="cfFooterPolicy">
+        <a href="privacy.html">プライバシーポリシー</a>
+        <span>/</span>
+        <a href="terms.html">利用規約</a>
+        <span>/</span>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+
+      <a
+        href="https://x.com/vfes_official_"
+        class="cfFooterX"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="ぶいふぇす公式X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M18.244 2H21l-6.56 7.497L22.154 22h-6.037l-4.728-6.184L5.98 22H3.22l7.016-8.017L1.846 2h6.19l4.274 5.649L18.244 2Zm-1.058 18h1.673L7.128 3.895H5.334L17.186 20Z"/>
+        </svg>
+      </a>
+
+      <a
+        href="https://www.instagram.com/ke_vfes/"
+        class="cfFooterInstagram"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="ぶいふぇす公式Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 12 17a4.5 4.5 0 0 0 0-9zm0 7.3a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6zM17.5 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+        </svg>
+      </a>
+
+      <p class="cfFooterCopy">
+        © 2026 ぶいふぇす
+      </p>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
