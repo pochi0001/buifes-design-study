@@ -12799,3 +12799,29 @@ html{
   justify-content: center;
   width: 100%;
 }
+
+.topTicketPriceBtnWrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.topTicketPriceBtnWrap{
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 22px;
+}
+
+.topTicketPriceBtnWrap .cfBtn{
+  display: inline-flex;
+}
+
+.topTicketPriceBtnWrap{
+  grid-column: 1 / -1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
