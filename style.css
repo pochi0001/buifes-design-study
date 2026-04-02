@@ -4820,7 +4820,7 @@ body .cfNotice{
   letter-spacing: .04em;
   line-height: 1.45;
   text-decoration: none;
-  word-break: keep-all;
+
   overflow-wrap: anywhere;
 }
 
@@ -10741,4 +10741,2061 @@ main,
   .ticketGiftNote{
     font-size: 13px;
   }
+}
+
+/* =========================
+   TOP TICKET - SIMPLE
+   ========================= */
+.topTicketSimple{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 28px 28px 24px;
+  background: #fff;
+  border: 3px solid #1f1f1f;
+  box-shadow: 6px 6px 0 #1f1f1f;
+  position: relative;
+  overflow: hidden;
+}
+
+.topTicketSimple::before{
+  content:"";
+  position:absolute;
+  top:-26px;
+  right:-26px;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(
+    135deg,
+    rgba(93,173,236,.18),
+    rgba(249,160,63,.18)
+  );
+  transform: rotate(14deg);
+}
+
+.topTicketSimple::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:8px;
+  background: var(--lemon);
+}
+
+.topTicketSimple > *{
+  position: relative;
+  z-index: 1;
+}
+
+.topTicketSimpleHead{
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.topTicketSimpleSub{
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .16em;
+  color: rgba(0,0,0,.55);
+}
+
+.topTicketSimpleTitle{
+  margin: 0 0 12px;
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.4;
+  font-weight: 900;
+  letter-spacing: .05em;
+  color: #1f1f1f;
+}
+
+.topTicketSimpleLead{
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.9;
+  font-weight: 800;
+  letter-spacing: .04em;
+  color: rgba(0,0,0,.72);
+}
+
+.topTicketSimplePrices{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.topTicketSimpleCol{
+  border: 2px solid #1f1f1f;
+  padding: 16px 16px 12px;
+  background: #fff;
+}
+
+.topTicketSimpleLabel{
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  color: var(--orange);
+}
+
+.topTicketSimpleRow{
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,.10);
+  font-size: 14px;
+}
+
+.topTicketSimpleRow:last-child{
+  border-bottom: 0;
+}
+
+.topTicketSimpleRow span{
+  font-weight: 800;
+  color: #1f1f1f;
+}
+
+.topTicketSimpleRow strong{
+  font-weight: 900;
+  color: #1f1f1f;
+}
+
+.topTicketSimpleNote{
+  margin: 0;
+  padding: 14px 16px;
+  border: 2px solid #1f1f1f;
+  background: linear-gradient(
+    90deg,
+    rgba(249,160,63,.10),
+    rgba(93,173,236,.08)
+  );
+  font-size: 13px;
+  line-height: 1.8;
+  font-weight: 800;
+  color: #1f1f1f;
+}
+
+.topTicketSimpleBtns{
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#ticket .cfBtn{
+  background: #1f1f1f;
+  border-bottom: 6px solid var(--lemon);
+}
+
+#ticket .cfBtn:hover{
+  background: var(--lemon);
+  color: #1f1f1f;
+}
+
+#ticket .cfBtnOutline{
+  border: 3px solid #1f1f1f;
+  background: #fff;
+}
+
+#ticket .cfBtnOutline:hover{
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #fff;
+}
+
+@media (max-width: 700px){
+  .topTicketSimple{
+    padding: 22px 16px 18px;
+    box-shadow: 5px 5px 0 #1f1f1f;
+  }
+
+  .topTicketSimplePrices{
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .topTicketSimpleTitle{
+    font-size: 22px;
+  }
+
+  .topTicketSimpleLead,
+  .topTicketSimpleRow,
+  .topTicketSimpleNote{
+    font-size: 13px;
+  }
+
+  .topTicketSimpleBtns{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .topTicketSimpleBtns .cfBtn,
+  .topTicketSimpleBtns .cfBtnOutline{
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* =================================
+   TICKETS PAGE FINAL CLEAN
+   必ず style.css の一番下
+================================= */
+
+.page-ticket .cfPageHero{
+  padding: 34px 18px 6px;
+}
+
+.page-ticket .cfPageLead{
+  margin-top: 14px;
+  color: rgba(0,0,0,.74) !important;
+  line-height: 1.9;
+  font-size: 14px;
+  opacity: 1 !important;
+}
+
+.page-ticket .cfSection{
+  padding: 42px 0 !important;
+}
+
+.ticketSection .cfWrap{
+  max-width: 1100px;
+}
+
+/* -----------------
+   HERO
+----------------- */
+.ticketHeroSimple{
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.ticketHeroMain,
+.ticketHeroSide{
+  position: relative;
+  background: #fff;
+  border: 3px solid #1f1f1f;
+  box-shadow: 7px 7px 0 #1f1f1f;
+}
+
+.ticketHeroMain{
+  padding: 30px 28px 26px;
+  overflow: hidden;
+}
+
+.ticketHeroMain::before{
+  content:"";
+  position:absolute;
+  top:-28px;
+  right:-28px;
+  width:130px;
+  height:130px;
+  background: linear-gradient(
+    135deg,
+    rgba(93,173,236,.18),
+    rgba(249,160,63,.18)
+  );
+  transform: rotate(15deg);
+}
+
+.ticketHeroMain::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:8px;
+  background: var(--lemon);
+}
+
+.ticketHeroMain > *{
+  position: relative;
+  z-index: 1;
+}
+
+.ticketHeroEyebrow{
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .16em;
+  color: rgba(0,0,0,.55);
+}
+
+.ticketHeroCatch{
+  margin: 0;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.25;
+  font-weight: 900;
+  letter-spacing: .03em;
+  color: #1f1f1f;
+}
+
+.ticketHeroCatch span{
+  color: var(--orange);
+}
+
+.ticketHeroCopy{
+  margin: 14px 0 0;
+  font-size: 15px;
+  line-height: 1.95;
+  font-weight: 700;
+  color: rgba(0,0,0,.74);
+}
+
+.ticketHeroAlert{
+  margin-top: 18px;
+  padding: 16px 18px;
+  border: 2px solid #1f1f1f;
+  background: linear-gradient(
+    90deg,
+    rgba(249,160,63,.10),
+    rgba(93,173,236,.08)
+  );
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.ticketHeroBtns{
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ticketHeroSide{
+  padding: 18px;
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+.ticketMiniPrice{
+  border: 2px solid #1f1f1f;
+  background: #fff;
+  padding: 14px 14px 10px;
+}
+
+.ticketMiniPrice--sub{
+  background: #fffaf4;
+}
+
+.ticketMiniPriceHead{
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  color: var(--orange);
+}
+
+.ticketMiniPriceRow{
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ticketMiniPriceRow:last-child{
+  border-bottom: 0;
+}
+
+.ticketMiniPriceRow span{
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.ticketMiniPriceRow strong{
+  font-weight: 900;
+  color: #1f1f1f;
+}
+
+/* -----------------
+   section head
+----------------- */
+.ticketSectionHead{
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.ticketSectionSub{
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .16em;
+  color: rgba(0,0,0,.55);
+}
+
+.ticketSectionTitle{
+  margin: 0 auto !important;
+  width: fit-content;
+  padding: 6px 20px;
+  background: linear-gradient(90deg, var(--orange), #fff);
+  border: 4px solid #1f1f1f;
+  box-shadow: 8px 8px 0 #1f1f1f;
+  font-size: clamp(24px, 3.5vw, 38px) !important;
+  line-height: 1.3;
+  font-weight: 900;
+  letter-spacing: .08em;
+  color: #1f1f1f;
+}
+
+.ticketSectionText{
+  margin: 16px auto 0;
+  max-width: 760px;
+  font-size: 15px;
+  line-height: 1.95;
+  font-weight: 700;
+  color: rgba(0,0,0,.72);
+}
+
+/* -----------------
+   seat cards
+----------------- */
+.ticketGridClean{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.ticketSeatCard{
+  background: #fff;
+  border: 3px solid #1f1f1f;
+  box-shadow: 7px 7px 0 #1f1f1f;
+  padding: 22px 20px 20px;
+}
+
+.ticketSeatCard--s{
+  background: linear-gradient(180deg, #fff, #fff8f1);
+}
+
+.ticketSeatCard--a{
+  background: linear-gradient(180deg, #fff, #f9fcff);
+}
+
+.ticketSeatCard--stand{
+  background: linear-gradient(180deg, #fff, #fcfcfc);
+}
+
+.ticketSeatLabel{
+  display: inline-block;
+  padding: 6px 10px;
+  background: #1f1f1f;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+.ticketSeatTitle{
+  margin: 14px 0 8px;
+  font-size: 28px;
+  line-height: 1.25;
+  font-weight: 900;
+  color: #1f1f1f;
+}
+
+.ticketSeatLead{
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 700;
+  color: rgba(0,0,0,.72);
+}
+
+.ticketSeatPrice{
+  display: grid;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.ticketSeatPriceBox{
+  border: 2px solid #1f1f1f;
+  background: rgba(93,173,236,.08);
+  padding: 14px 14px 12px;
+}
+
+.ticketSeatPriceBox--sub{
+  background: rgba(249,160,63,.08);
+}
+
+.ticketSeatPriceTag{
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  color: var(--orange);
+}
+
+.ticketSeatPriceBox strong{
+  display: block;
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 900;
+  color: #1f1f1f;
+}
+
+.ticketSeatPriceBox small{
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.ticketSeatList{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 9px;
+}
+
+.ticketSeatList li{
+  position: relative;
+  padding-left: 16px;
+  font-size: 14px;
+  line-height: 1.75;
+  font-weight: 700;
+  color: rgba(0,0,0,.76);
+}
+
+.ticketSeatList li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:.72em;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background: var(--orange);
+  transform: translateY(-50%);
+}
+
+/* -----------------
+   seat map
+----------------- */
+.ticketMapCard{
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 16px;
+  background: #fff;
+  border: 3px solid #1f1f1f;
+  box-shadow: 7px 7px 0 #1f1f1f;
+}
+
+.ticketMapCard img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid #1f1f1f;
+}
+
+/* -----------------
+   bonus
+----------------- */
+.ticketBonusGridClean{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.ticketBonusCardClean{
+  background: #fff;
+  border: 3px solid #1f1f1f;
+  box-shadow: 7px 7px 0 #1f1f1f;
+  overflow: hidden;
+}
+
+.ticketBonusCardImg{
+  border-bottom: 2px solid #1f1f1f;
+  background: #fff;
+}
+
+.ticketBonusCardImg img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ticketBonusCardBody{
+  padding: 16px 18px 18px;
+}
+
+.ticketBonusCardBody h3{
+  margin: 0 0 8px;
+  font-size: 22px;
+  line-height: 1.45;
+  font-weight: 900;
+  color: #1f1f1f;
+}
+
+.ticketBonusCardBody p{
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 700;
+  color: rgba(0,0,0,.7);
+}
+
+.ticketGiftNoteClean{
+  margin-top: 16px;
+  padding: 16px 18px;
+  border: 2px solid #1f1f1f;
+  background: #fffaf4;
+  font-size: 14px;
+  line-height: 1.9;
+  font-weight: 700;
+  color: rgba(0,0,0,.74);
+}
+
+/* -----------------
+   guide
+----------------- */
+.ticketGuideCardClean{
+  background: #fff;
+  border: 3px solid #1f1f1f;
+  box-shadow: 7px 7px 0 #1f1f1f;
+  padding: 22px 22px 20px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.ticketGuideListClean{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.ticketGuideListClean li{
+  position: relative;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.9;
+  font-weight: 700;
+  color: rgba(0,0,0,.76);
+}
+
+.ticketGuideListClean li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:.74em;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background: var(--teal);
+  transform: translateY(-50%);
+}
+
+.ticketBottomCta{
+  margin-top: 22px;
+  text-align: center;
+}
+
+/* -----------------
+   buttons
+----------------- */
+.page-ticket .cfBtn{
+  background: #1f1f1f !important;
+  border-bottom: 6px solid var(--lemon) !important;
+}
+
+.page-ticket .cfBtn:hover{
+  background: var(--lemon) !important;
+  color: #1f1f1f !important;
+}
+
+.page-ticket .cfBtnOutline{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 18px;
+  background: #fff;
+  border: 3px solid #1f1f1f;
+  color: #1f1f1f;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: .06em;
+}
+
+.page-ticket .cfBtnOutline:hover{
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #fff;
+}
+
+/* -----------------
+   responsive
+----------------- */
+@media (max-width: 980px){
+  .ticketHeroSimple,
+  .ticketGridClean,
+  .ticketBonusGridClean{
+    grid-template-columns: 1fr;
+  }
+
+  .ticketHeroSide{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: grid;
+  }
+}
+
+@media (max-width: 700px){
+  .page-ticket .cfSection{
+    padding: 34px 0 !important;
+  }
+
+  .ticketHeroMain,
+  .ticketHeroSide,
+  .ticketSeatCard,
+  .ticketMapCard,
+  .ticketBonusCardClean,
+  .ticketGuideCardClean{
+    box-shadow: 5px 5px 0 #1f1f1f;
+  }
+
+  .ticketHeroMain{
+    padding: 22px 16px 18px;
+  }
+
+  .ticketHeroSide{
+    padding: 12px;
+    grid-template-columns: 1fr;
+  }
+
+  .ticketHeroCatch{
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .ticketHeroCopy,
+  .ticketHeroAlert,
+  .ticketSectionText,
+  .ticketSeatLead,
+  .ticketSeatList li,
+  .ticketGiftNoteClean,
+  .ticketGuideListClean li{
+    font-size: 13px;
+  }
+
+  .ticketSectionTitle{
+    padding: 5px 14px;
+    box-shadow: 5px 5px 0 #1f1f1f;
+    font-size: 24px !important;
+  }
+
+  .ticketSeatTitle{
+    font-size: 24px;
+  }
+
+  .ticketSeatPriceBox strong{
+    font-size: 28px;
+  }
+
+  .ticketBonusCardBody h3{
+    font-size: 18px;
+  }
+
+  .ticketHeroBtns{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .ticketHeroBtns .cfBtn,
+  .ticketHeroBtns .cfBtnOutline{
+    width: 100%;
+  }
+}
+
+/* =================================
+   TICKETS PAGE FINAL TUNE
+   必ず style.css の一番下
+================================= */
+
+/* 見出しを少しスマートに */
+.ticketSectionTitle{
+  font-size: clamp(22px, 3.2vw, 34px) !important;
+  font-weight: 800 !important;
+  letter-spacing: .04em !important;
+  padding: 7px 18px !important;
+  box-shadow: 6px 6px 0 #1f1f1f !important;
+}
+
+.ticketSectionSub{
+  font-size: 11px !important;
+  letter-spacing: .18em !important;
+  font-weight: 800 !important;
+  color: rgba(0,0,0,.48) !important;
+}
+
+.ticketSectionText{
+  font-size: 14px !important;
+  line-height: 1.9 !important;
+  color: rgba(0,0,0,.72) !important;
+}
+
+.ticketSectionText--small{
+  margin-top: 12px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: rgba(0,0,0,.58) !important;
+}
+
+/* HEROを少し軽く */
+.ticketHeroMain,
+.ticketHeroSide,
+.ticketSeatCard,
+.ticketMapCard,
+.ticketBonusCardClean,
+.ticketGuideCardClean{
+  box-shadow: 5px 5px 0 #1f1f1f !important;
+}
+
+.ticketHeroMain{
+  padding: 28px 24px 24px !important;
+}
+
+.ticketHeroCatch{
+  font-size: clamp(26px, 3.8vw, 40px) !important;
+  line-height: 1.3 !important;
+  letter-spacing: .02em !important;
+}
+
+.ticketHeroCopy{
+  font-size: 14px !important;
+  line-height: 1.9 !important;
+}
+
+.ticketHeroAlert{
+  font-size: 13px !important;
+  line-height: 1.8 !important;
+  padding: 14px 16px !important;
+}
+
+.ticketHeroSide{
+  padding: 16px !important;
+}
+
+.ticketMiniPrice{
+  padding: 14px 14px 10px !important;
+}
+
+.ticketMiniPriceHead{
+  font-size: 11px !important;
+  letter-spacing: .12em !important;
+}
+
+.ticketMiniPriceRow{
+  font-size: 13px !important;
+  padding: 9px 0 !important;
+}
+
+/* 席種カードも少し軽く */
+.ticketGridClean{
+  gap: 18px !important;
+}
+
+.ticketSeatCard{
+  padding: 20px 18px 18px !important;
+}
+
+.ticketSeatLabel{
+  font-size: 10px !important;
+  letter-spacing: .12em !important;
+  padding: 6px 10px !important;
+}
+
+.ticketSeatTitle{
+  font-size: 24px !important;
+  line-height: 1.3 !important;
+  margin: 12px 0 8px !important;
+}
+
+.ticketSeatLead{
+  font-size: 13px !important;
+  line-height: 1.8 !important;
+  margin-bottom: 12px !important;
+}
+
+.ticketSeatPrice{
+  gap: 10px !important;
+  margin-bottom: 12px !important;
+}
+
+.ticketSeatPriceBox{
+  padding: 12px 12px 10px !important;
+}
+
+.ticketSeatPriceTag{
+  font-size: 11px !important;
+  letter-spacing: .12em !important;
+}
+
+.ticketSeatPriceBox strong{
+  font-size: 25px !important;
+  line-height: 1.15 !important;
+}
+
+.ticketSeatList{
+  gap: 8px !important;
+}
+
+.ticketSeatList li{
+  font-size: 13px !important;
+  line-height: 1.75 !important;
+}
+
+/* 会場図の見出しも軽く */
+.ticketMapCard{
+  max-width: 900px !important;
+  padding: 14px !important;
+}
+
+/* 特典画像の見え方を揃える */
+.ticketBonusGridClean{
+  align-items: stretch !important;
+  gap: 18px !important;
+}
+
+.ticketBonusCardClean{
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.ticketBonusCardImg{
+  height: 420px;
+  background: #fff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+
+.ticketBonusCardImg img{
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}
+
+/* エコバッグは全体が見えやすいよう contain */
+.ticketBonusCardImg--bag img{
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: #fff !important;
+  padding: 12px !important;
+}
+
+/* ステッカーは少しトリミングして面を合わせる */
+.ticketBonusCardImg--sticker img{
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+
+.ticketBonusCardBody{
+  padding: 16px 18px 18px !important;
+}
+
+.ticketBonusCardBody h3{
+  font-size: 20px !important;
+  line-height: 1.45 !important;
+  margin-bottom: 6px !important;
+}
+
+.ticketBonusCardBody p{
+  font-size: 13px !important;
+}
+
+/* 注記を少し軽く */
+.ticketGiftNoteClean{
+  margin-top: 16px !important;
+  padding: 14px 16px !important;
+  font-size: 13px !important;
+  line-height: 1.85 !important;
+  box-shadow: none !important;
+  border-width: 2px !important;
+}
+
+/* GUIDE */
+.ticketGuideCardClean{
+  max-width: 900px !important;
+  padding: 20px 20px 18px !important;
+}
+
+.ticketGuideListClean{
+  gap: 10px !important;
+}
+
+.ticketGuideListClean li{
+  font-size: 13px !important;
+  line-height: 1.85 !important;
+}
+
+/* ボタン */
+.page-ticket .cfBtn{
+  border-bottom: 5px solid var(--lemon) !important;
+}
+
+.page-ticket .cfBtnOutline{
+  min-height: 48px !important;
+  padding: 0 16px !important;
+  font-size: 13px !important;
+}
+
+/* レスポンシブ */
+@media (max-width: 980px){
+  .ticketHeroSimple,
+  .ticketGridClean,
+  .ticketBonusGridClean{
+    grid-template-columns: 1fr !important;
+  }
+
+  .ticketBonusCardImg{
+    height: 380px;
+  }
+}
+
+@media (max-width: 700px){
+  .ticketSectionTitle{
+    font-size: 20px !important;
+    padding: 6px 14px !important;
+    box-shadow: 4px 4px 0 #1f1f1f !important;
+  }
+
+  .ticketHeroMain,
+  .ticketHeroSide,
+  .ticketSeatCard,
+  .ticketMapCard,
+  .ticketBonusCardClean,
+  .ticketGuideCardClean{
+    box-shadow: 4px 4px 0 #1f1f1f !important;
+  }
+
+  .ticketHeroMain{
+    padding: 22px 16px 18px !important;
+  }
+
+  .ticketHeroCatch{
+    font-size: 24px !important;
+  }
+
+  .ticketHeroBtns{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .ticketHeroBtns .cfBtn,
+  .ticketHeroBtns .cfBtnOutline{
+    width: 100% !important;
+  }
+
+  .ticketBonusCardImg{
+    height: 300px;
+  }
+
+  .ticketBonusCardBody h3{
+    font-size: 18px !important;
+  }
+}
+
+/* =========================
+   見出しをスマート化
+========================= */
+.ticketSectionTitle{
+  font-weight: 600 !important;   /* ← ここが重要 */
+  letter-spacing: .06em !important;
+  font-size: clamp(22px, 3vw, 32px) !important;
+  padding: 6px 18px !important;
+  box-shadow: 5px 5px 0 #1f1f1f !important;
+}
+
+.ticketSectionSub{
+  font-weight: 600 !important;
+  letter-spacing: .2em !important;
+  color: rgba(0,0,0,.5) !important;
+}
+
+/* セクション余白を少し広げて軽く見せる */
+.ticketSectionHead{
+  margin-bottom: 28px !important;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.page-ticket .cfBtn{
+  font-weight: 700 !important;
+  letter-spacing: .08em !important;
+}
+
+.ticketHeroQuick{
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ticketHeroQuick span{
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 14px;
+  background: #fffaf4;
+  border: 2px solid #1f1f1f;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: #1f1f1f;
+}
+
+.ticketSeatCard--s{
+  background: linear-gradient(180deg, #fffdf8 0%, #fff6ea 100%);
+}
+
+.ticketSeatCard--s .ticketSeatLabel{
+  background: var(--orange);
+  color: #1f1f1f;
+  border: 2px solid #1f1f1f;
+}
+
+.ticketSeatCard--s .ticketSeatTitle::after{
+  content: "おすすめ";
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: #1f1f1f;
+  background: #fff;
+  border: 2px solid #1f1f1f;
+  vertical-align: middle;
+}
+
+.ticketHeroSide--compare{
+  display: grid;
+  gap: 16px;
+}
+
+.ticketCompareCard{
+  background: #fff;
+  border: 3px solid #1f1f1f;
+  box-shadow: 6px 6px 0 #1f1f1f;
+  padding: 18px 18px 16px;
+}
+
+.ticketCompareCard--main{
+  background: linear-gradient(180deg, #fffdf8 0%, #fff7ee 100%);
+}
+
+.ticketCompareCard--sub{
+  background: #fff;
+  opacity: .96;
+}
+
+.ticketCompareHead{
+  margin-bottom: 14px;
+}
+
+.ticketCompareHead h3{
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 800;
+  letter-spacing: .04em;
+  color: #1f1f1f;
+}
+
+.ticketCompareHead p{
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: rgba(0,0,0,.62);
+  font-weight: 700;
+}
+
+.ticketCompareBadge{
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  background: var(--orange);
+  border: 2px solid #1f1f1f;
+  color: #1f1f1f;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+.ticketCompareList{
+  display: grid;
+  gap: 10px;
+}
+
+.ticketCompareRow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(0,0,0,.12);
+}
+
+.ticketCompareRow:first-child{
+  border-top: 0;
+  padding-top: 4px;
+}
+
+.ticketCompareSeat{
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: #1f1f1f;
+}
+
+.ticketComparePrice{
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1;
+  color: #1f1f1f;
+  letter-spacing: .02em;
+}
+
+.ticketCompareCard--main .ticketComparePrice{
+  color: var(--orange);
+}
+
+@media (max-width: 980px){
+  .ticketCompareHead h3{
+    font-size: 18px;
+  }
+
+  .ticketCompareSeat{
+    font-size: 15px;
+  }
+
+  .ticketComparePrice{
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 640px){
+  .ticketCompareCard{
+    padding: 16px 14px 14px;
+    box-shadow: 5px 5px 0 #1f1f1f;
+  }
+
+  .ticketCompareHead h3{
+    font-size: 17px;
+  }
+
+  .ticketCompareHead p{
+    font-size: 11px;
+  }
+
+  .ticketCompareSeat{
+    font-size: 14px;
+  }
+
+  .ticketComparePrice{
+    font-size: 22px;
+  }
+}
+
+/* =================================
+   TICKET HERO RIGHT FINAL OVERRIDE
+   必ず style.css の一番最後
+================================= */
+
+.ticketHeroSide.ticketHeroSide--compare{
+  display: grid !important;
+  gap: 16px !important;
+  padding: 16px !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.ticketHeroSide--compare .ticketCompareCard{
+  background: #fff !important;
+  border: 3px solid #1f1f1f !important;
+  box-shadow: 5px 5px 0 #1f1f1f !important;
+  padding: 18px 18px 16px !important;
+  opacity: 1 !important;
+}
+
+.ticketHeroSide--compare .ticketCompareCard--main{
+  background: linear-gradient(180deg, #fffdf8 0%, #fff6ea 100%) !important;
+}
+
+.ticketHeroSide--compare .ticketCompareCard--sub{
+  background: #fffaf4 !important;
+}
+
+.ticketHeroSide--compare .ticketCompareHead{
+  margin-bottom: 12px !important;
+}
+
+.ticketHeroSide--compare .ticketCompareHead h3{
+  margin: 0 !important;
+  font-size: 19px !important;
+  line-height: 1.35 !important;
+  font-weight: 800 !important;
+  letter-spacing: .03em !important;
+  color: #1f1f1f !important;
+}
+
+.ticketHeroSide--compare .ticketCompareHead p{
+  margin: 6px 0 0 !important;
+  font-size: 12px !important;
+  line-height: 1.7 !important;
+  font-weight: 700 !important;
+  color: rgba(0,0,0,.62) !important;
+}
+
+.ticketHeroSide--compare .ticketCompareBadge{
+  display: inline-flex !important;
+  align-items: center !important;
+  min-height: 28px !important;
+  padding: 0 10px !important;
+  margin-bottom: 10px !important;
+  background: var(--orange) !important;
+  color: #1f1f1f !important;
+  border: 2px solid #1f1f1f !important;
+  font-size: 11px !important;
+  font-weight: 900 !important;
+  letter-spacing: .12em !important;
+}
+
+.ticketHeroSide--compare .ticketCompareList{
+  display: grid !important;
+  gap: 0 !important;
+}
+
+.ticketHeroSide--compare .ticketCompareRow{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 14px !important;
+  padding: 12px 0 !important;
+  border-top: 1px solid rgba(0,0,0,.12) !important;
+}
+
+.ticketHeroSide--compare .ticketCompareRow:first-child{
+  border-top: 0 !important;
+  padding-top: 4px !important;
+}
+
+.ticketHeroSide--compare .ticketCompareSeat{
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+  font-weight: 800 !important;
+  color: #1f1f1f !important;
+}
+
+.ticketHeroSide--compare .ticketComparePrice{
+  font-size: 30px !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+  letter-spacing: .01em !important;
+  color: #1f1f1f !important;
+}
+
+.ticketHeroSide--compare .ticketCompareCard--main .ticketComparePrice{
+  color: var(--orange) !important;
+}
+
+@media (max-width: 980px){
+  .ticketHeroSide.ticketHeroSide--compare{
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 640px){
+  .ticketHeroSide--compare .ticketCompareCard{
+    padding: 16px 14px 14px !important;
+  }
+
+  .ticketHeroSide--compare .ticketCompareHead h3{
+    font-size: 17px !important;
+  }
+
+  .ticketHeroSide--compare .ticketCompareSeat{
+    font-size: 14px !important;
+  }
+
+  .ticketHeroSide--compare .ticketComparePrice{
+    font-size: 24px !important;
+  }
+}
+
+/* もう少しだけ詰める版 */
+.ticketHeroMain{
+  padding-bottom: 16px !important;
+}
+
+.ticketHeroBtns{
+  margin-top: 12px !important;
+}
+
+.ticketHeroMain{
+  display: flex;
+  flex-direction: column;
+}
+
+.ticketHeroBtns{
+  margin-top: auto !important;
+}
+
+.ticketHeroMain{
+  padding-bottom: 16px !important;
+}
+
+.ticketHeroMain--single{
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.ticketHeroMain--single .ticketHeroBtns{
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.ticketSection--hero{
+  padding-top: 56px !important;
+  padding-bottom: 64px !important;
+}
+
+.page-ticket .cfPageLead{
+  margin-bottom: 28px !important;
+}
+
+.ticketHeroMain{
+  padding: 34px 32px 30px !important;
+}
+
+.ticketHeroCopy{
+  margin-top: 16px !important;
+}
+
+.ticketHeroBtns{
+  margin-top: 24px !important;
+}
+
+.ticketSection + .ticketSection{
+  padding-top: 58px !important;
+}
+
+.page-ticket .cfPageLead{
+  text-align: center;
+  margin: 16px auto 32px !important;
+  max-width: 560px;
+}
+
+.page-ticket .cfPageLead{
+  text-align: center;
+  margin: 16px auto 32px !important;
+  max-width: 560px;
+  font-weight: 600;
+  color: rgba(0,0,0,.72);
+}
+
+/* =========================
+   TOP TICKET 横長ヒーロー + 価格2カラム
+   ========================= */
+
+.topTicketStack{
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.topTicketHeroWide{
+  position: relative;
+  background: #fff;
+  border: 3px solid #1f1f1f;
+  box-shadow: 6px 6px 0 #1f1f1f;
+  padding: 28px 30px 24px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.topTicketHeroWide::before{
+  content: "";
+  position: absolute;
+  top: -28px;
+  right: -28px;
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(
+    135deg,
+    rgba(93,173,236,.15),
+    rgba(249,160,63,.15)
+  );
+  transform: rotate(14deg);
+}
+
+.topTicketHeroWide::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 8px;
+  background: var(--lemon);
+}
+
+.topTicketHeroWide > *{
+  position: relative;
+  z-index: 1;
+}
+
+.topTicketHeroSub{
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .16em;
+  color: rgba(0,0,0,.52);
+  text-align: center;
+}
+
+.topTicketHeroTitle{
+  margin: 0;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: .03em;
+  color: #1f1f1f;
+  text-align: center;
+}
+
+.topTicketHeroLead{
+  margin: 16px auto 0;
+  max-width: 720px;
+  font-size: 15px;
+  line-height: 1.95;
+  font-weight: 700;
+  color: rgba(0,0,0,.74);
+  text-align: center;
+}
+
+.topTicketHeroBtns{
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.topTicketPriceGrid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.topTicketPriceCard{
+  background: #fff;
+  border: 3px solid #1f1f1f;
+  box-shadow: 6px 6px 0 #1f1f1f;
+  padding: 18px 18px 14px;
+}
+
+.topTicketPriceCard--advance{
+  background: linear-gradient(180deg, #fffdf8 0%, #fff7ee 100%);
+}
+
+.topTicketPriceCard--day{
+  background: #fff;
+}
+
+.topTicketPriceHead{
+  margin-bottom: 12px;
+}
+
+.topTicketPriceBadge{
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  background: var(--orange);
+  border: 2px solid #1f1f1f;
+  color: #1f1f1f;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+.topTicketPriceHead h4{
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.3;
+  font-weight: 900;
+  color: #1f1f1f;
+}
+
+.topTicketPriceHead p{
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.7;
+  font-weight: 700;
+  color: rgba(0,0,0,.62);
+}
+
+.topTicketPriceRows{
+  display: grid;
+}
+
+.topTicketPriceRow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-top: 1px solid rgba(0,0,0,.10);
+}
+
+.topTicketPriceRow:first-child{
+  border-top: 0;
+  padding-top: 4px;
+}
+
+.topTicketPriceRow span{
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 800;
+  color: #1f1f1f;
+}
+
+.topTicketPriceRow strong{
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 900;
+  color: #1f1f1f;
+  letter-spacing: .01em;
+}
+
+.topTicketPriceCard--advance .topTicketPriceRow strong{
+  color: var(--orange);
+}
+
+#ticket .cfBtn{
+  background: #1f1f1f;
+  border-bottom: 6px solid var(--lemon);
+}
+
+#ticket .cfBtn:hover{
+  background: var(--lemon);
+  color: #1f1f1f;
+}
+
+#ticket .cfBtnOutline{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 18px;
+  background: #fff;
+  border: 3px solid #1f1f1f;
+  color: #1f1f1f;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: .06em;
+}
+
+#ticket .cfBtnOutline:hover{
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #fff;
+}
+
+@media (max-width: 700px){
+  .topTicketHeroWide,
+  .topTicketPriceCard{
+    box-shadow: 5px 5px 0 #1f1f1f;
+  }
+
+  .topTicketHeroWide{
+    padding: 22px 16px 18px;
+    margin-bottom: 16px;
+  }
+
+  .topTicketHeroTitle{
+    font-size: 24px;
+    line-height: 1.35;
+  }
+
+  .topTicketHeroLead{
+    font-size: 13px;
+  }
+
+  .topTicketPriceGrid{
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .topTicketPriceHead h4{
+    font-size: 22px;
+  }
+
+  .topTicketPriceRow span{
+    font-size: 16px;
+  }
+
+  .topTicketPriceRow strong{
+    font-size: 30px;
+  }
+
+  .topTicketHeroBtns{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .topTicketHeroBtns .cfBtn,
+  .topTicketHeroBtns .cfBtnOutline{
+    width: 100%;
+  }
+}
+
+/* =========================
+   TICKETS PAGE MOBILE
+   改行をきれいにする最終調整
+   ========================= */
+@media (max-width: 600px){
+
+  /* 1文字だけ落ちるのを減らす */
+  .cfPageLead,
+  .ticketHeroCopy,
+  .ticketHeroAlert,
+  .ticketSectionText,
+  .ticketGiftNoteClean,
+  .ticketGuideListClean li,
+  .ticketSeatLead,
+  .ticketSeatList li,
+  .ticketBonusCardBody p{
+    text-wrap: pretty;
+    hanging-punctuation: allow-end;
+  }
+
+  /* ヒーロー見出し */
+  .ticketHeroCatch{
+    font-size: 20px !important;
+    line-height: 1.45 !important;
+    letter-spacing: .02em !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+  }
+
+  /* 上の説明文 */
+  .cfPageLead{
+    max-width: 22em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.9 !important;
+  }
+
+  /* ヒーローカード本文 */
+  .ticketHeroCopy{
+    font-size: 13px !important;
+    line-height: 1.95 !important;
+  }
+
+  .ticketHeroAlert{
+    font-size: 13px !important;
+    line-height: 1.85 !important;
+  }
+
+  /* セクション説明文 */
+  .ticketSectionText{
+    max-width: 22em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px !important;
+    line-height: 1.95 !important;
+  }
+
+  /* 座席説明 */
+  .ticketSeatLead{
+    min-height: auto !important;
+    font-size: 13px !important;
+    line-height: 1.85 !important;
+  }
+
+  /* 箇条書き */
+  .ticketSeatList li,
+  .ticketGuideListClean li{
+    font-size: 13px !important;
+    line-height: 1.9 !important;
+  }
+
+  /* 特典の説明 */
+  .ticketBonusCardBody h3{
+    line-height: 1.5 !important;
+    word-break: keep-all !important;
+  }
+
+  .ticketBonusCardBody p{
+    line-height: 1.8 !important;
+  }
+
+  /* 注記 */
+  .ticketGiftNoteClean{
+    font-size: 12.5px !important;
+    line-height: 1.9 !important;
+  }
+
+  /* ボタンの文字が変に折れないように */
+  .ticketHeroBtns .cfBtn,
+  .ticketHeroBtns .cfBtnOutline,
+  .ticketBottomCta .cfBtn{
+    white-space: nowrap;
+    font-size: 12px !important;
+    letter-spacing: .04em !important;
+  }
+
+  /* 価格まわりは絶対折らない */
+  .ticketSeatPriceBox strong,
+  .ticketComparePrice,
+  .ticketMiniPriceRow strong{
+    white-space: nowrap;
+  }
+}
+
+/* =========================
+   TICKETS PAGE MOBILE
+   文字組み最終調整
+   ========================= */
+@media (max-width: 600px){
+
+  /* 共通：日本語の折返しを安定させる */
+  .page-ticket p,
+  .page-ticket li,
+  .page-ticket h1,
+  .page-ticket h2,
+  .page-ticket h3,
+  .page-ticket a,
+  .page-ticket span,
+  .page-ticket strong{
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+    line-break: strict !important;
+  }
+
+  /* セクション見出し下の説明文を整える */
+  .ticketSectionText{
+    max-width: 21em !important;
+    margin: 14px auto 0 !important;
+    font-size: 13px !important;
+    line-height: 1.95 !important;
+    text-align: center !important;
+    text-wrap: balance;
+  }
+
+  /* 会場図の説明文だけ少し広め */
+  #seatmap .ticketSectionText{
+    max-width: 22em !important;
+  }
+
+  /* 特典グッズの説明文だけさらに自然に */
+  .ticketSection:nth-of-type(4) .ticketSectionText,
+  .ticketSection .ticketSectionText.ticketSectionText--bonus{
+    max-width: 23em !important;
+  }
+
+  /* HEROカード内の本文 */
+  .ticketHeroCopy{
+    max-width: 20em !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 13px !important;
+    line-height: 1.95 !important;
+    text-wrap: balance;
+  }
+
+  /* GUIDEカードを少し内側に余裕を作る */
+  .ticketGuideCardClean{
+    padding: 18px 14px 16px !important;
+    overflow: hidden !important;
+  }
+
+  .ticketGuideListClean{
+    gap: 10px !important;
+  }
+
+  .ticketGuideListClean li{
+    padding-left: 15px !important;
+    padding-right: 2px !important;
+    font-size: 12.5px !important;
+    line-height: 1.95 !important;
+    letter-spacing: .01em !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .ticketGuideListClean li::before{
+    width: 6px !important;
+    height: 6px !important;
+    top: .78em !important;
+  }
+
+  /* 会場図の説明文の変な細切れ感を減らす */
+  #seatmap .ticketSectionText br{
+    display: none;
+  }
+
+  /* 特典グッズの説明文もスマホではbrを消す */
+  .ticketSectionText.ticketSectionText--bonus br,
+  .ticketSection:nth-of-type(4) .ticketSectionText br{
+    display: none;
+  }
+
+  /* GUIDE見出しと本文の距離 */
+  .ticketSectionHead{
+    margin-bottom: 20px !important;
+  }
+
+  /* 注記 */
+  .ticketGiftNoteClean{
+    font-size: 12px !important;
+    line-height: 1.9 !important;
+  }
+}
+
+@media (max-width: 600px){
+  .page-ticket .cfPageLead,
+  .ticketHeroCopy,
+  .ticketSectionText,
+  .ticketGiftNoteClean,
+  .ticketGuideListClean li{
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    line-break: strict;
+  }
+}
+
+/* =========================
+   TOP TICKET 下ボタン調整
+   ========================= */
+
+
+.topTicketPriceBtn{
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: auto !important;
+  min-width: 220px;
+  padding: 0 24px !important;
+}
+
+@media (max-width: 700px){
+  .topTicketPriceBtn{
+    min-width: 0;
+    width: auto !important;
+    padding: 0 20px !important;
+  }
+}
+
+/* =========================
+   TOP TICKET 余白を増やして軽くする
+   ========================= */
+#ticket .cfWrap{
+  max-width: 980px !important;
+  padding-left: 28px !important;
+  padding-right: 28px !important;
+}
+
+.topTicketStack{
+  gap: 28px !important;
+}
+
+.topTicketHeroWide{
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 34px 34px 28px !important;
+}
+
+.topTicketPriceGrid{
+  max-width: 860px;
+  margin: 0 auto;
+  gap: 20px !important;
+}
+
+.topTicketPriceCard{
+  padding: 20px 18px 18px !important;
+}
+
+@media (max-width: 700px){
+  #ticket .cfWrap{
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .topTicketStack{
+    gap: 20px !important;
+  }
+
+  .topTicketHeroWide{
+    max-width: none;
+    padding: 24px 18px 20px !important;
+  }
+
+  .topTicketPriceGrid{
+    max-width: none;
+    gap: 14px !important;
+  }
+
+  .topTicketPriceCard{
+    padding: 16px 14px 14px !important;
+  }
+}
+
+.topTicketHeroTitle{
+  margin-bottom: 14px !important;
+}
+
+.topTicketHeroLead{
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================
+   カード同士の余白をちゃんと作る
+   ========================= */
+.topTicketHeroWide{
+  margin-bottom: 18px !important;
+}
+
+.topTicketPriceCard{
+  margin-bottom: 14px !important;
+}
+
+.topTicketHeroWide{
+  margin-bottom: 22px !important;
+}
+
+.topTicketPriceCard{
+  margin-bottom: 18px !important;
+}
+
+.topTicketPriceBtnWrap{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }

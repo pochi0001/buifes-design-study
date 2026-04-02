@@ -16,7 +16,7 @@
   </script>
 
   <link rel="icon" href="./img/builogo.jpg">
-  <link rel="stylesheet" href="./style.css?v=20260330-ticket" />
+  <link rel="stylesheet" href="./style.css?v=20260403-1" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -119,128 +119,110 @@
         <p class="cfBreadcrumb"><a href="index.html">TOP</a> / TICKET</p>
         <h1 class="cfPageTitle">TICKET</h1>
         <p class="cfPageLead">
-          2026年5月5日開催「ぶいふぇす」のチケット情報です。<br>
+          2026年5月5日開催<br>「ぶいふぇす」のチケット情報です。<br>
           前売券は当日券よりお得にご購入いただけます。
         </p>
       </div>
     </div>
 
-    <!-- intro -->
-    <section class="cfSection">
+    <!-- HERO -->
+    <section class="cfSection ticketSection ticketSection--hero">
       <div class="cfWrap">
-        <div class="ticketHeroBox">
-          <div class="ticketHeroText">
-            <p class="ticketEyebrow">2026.05.05 TICKET INFORMATION</p>
-            <h2 class="ticketHeroTitle">前売券は最大 <span>1,800円お得</span></h2>
-            <p class="ticketHeroDesc">
-              S席・A席・立ち見席をご用意しています。<br>
-              会場図と特典内容をご確認のうえ、お好みの席種をお選びください。
-            </p>
+        <div class="ticketHeroMain ticketHeroMain--single">
+          <p class="ticketHeroEyebrow">2026.05.05 TICKET INFORMATION</p>
+          <h2 class="ticketHeroCatch">
+            前売券は最大 <span>1,800円お得</span>
+          </h2>
+          <p class="ticketHeroCopy">
+            S席・A席・立ち見席をご用意しています。<br>
+            会場図と特典内容をご確認のうえ、お好みの席種をお選びください。
+          </p>
 
-            <div class="ticketHeroNotice">
-              <strong>当日券について</strong><br>
-              当日販売は <b>5月5日</b> を予定しています。
-            </div>
-
-            <div class="cfNoticeBtns">
-              <!-- TIGETのURLが決まったら差し替え -->
-              <a class="cfBtn" href="#" target="_blank" rel="noopener noreferrer">TIGETで購入する</a>
-              <a class="cfBtnOutline" href="#seatmap">会場図を見る</a>
-            </div>
-          </div>
-
-          <div class="ticketHeroMini">
-            <div class="ticketMiniCard">
-              <div class="ticketMiniLabel">前売販売価格</div>
-              <div class="ticketMiniRow">S席 <span>13,200円（税込）</span></div>
-              <div class="ticketMiniRow">A席 <span>8,800円（税込）</span></div>
-              <div class="ticketMiniRow">立ち見 <span>3,300円（税込）</span></div>
-            </div>
-
-            <div class="ticketMiniCard ticketMiniCardSub">
-              <div class="ticketMiniLabel">当日販売価格</div>
-              <div class="ticketMiniRow">S席 <span>15,000円（税込）</span></div>
-              <div class="ticketMiniRow">A席 <span>10,000円（税込）</span></div>
-              <div class="ticketMiniRow">立ち見 <span>3,500円（税込）</span></div>
-            </div>
+          <div class="ticketHeroBtns">
+            <a class="cfBtn js-ticket-btn" href="#" target="_blank" rel="noopener noreferrer">
+              前売券をTIGETで購入する
+            </a>
+            <a class="cfBtnOutline" href="#seatmap">会場図を見る</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- price cards -->
-    <section class="cfSection">
+    <!-- PRICE -->
+    <section class="cfSection ticketSection">
       <div class="cfWrap">
         <div class="ticketSectionHead">
           <p class="ticketSectionSub">SEAT TYPE</p>
-          <h2 class="ticketSectionTitle">席種・価格一覧</h2>
+          <h2 class="ticketSectionTitle">チケット・価格一覧</h2>
+          <p class="ticketSectionText ticketSectionText--small">価格はすべて税込み表記です</p>
         </div>
 
-        <div class="ticketGrid">
-          <article class="ticketCard ticketCardS">
-            <div class="ticketCardBadge">S SEAT</div>
-            <h3 class="ticketCardTitle">S席</h3>
-            <p class="ticketCardLead">ステージ最前エリア / ステージまで約2m</p>
+        <div class="ticketGridClean">
+          <article class="ticketSeatCard ticketSeatCard--s">
+            <div class="ticketSeatLabel">S SEAT</div>
+            <h3 class="ticketSeatTitle">S席</h3>
+            <p class="ticketSeatLead">ステージ最前エリア / ステージまで約2m</p>
 
-            <div class="ticketPriceBlock">
-              <div class="ticketPriceLabel">前売</div>
-              <div class="ticketPriceMain">13,200<span>円（税込）</span></div>
-              <div class="ticketPriceSub">税抜 12,000円</div>
+            <div class="ticketSeatPrice">
+              <div class="ticketSeatPriceBox">
+                <span class="ticketSeatPriceTag">前売</span>
+                <strong>13,200円</strong>
+              </div>
+              <div class="ticketSeatPriceBox ticketSeatPriceBox--sub">
+                <span class="ticketSeatPriceTag">当日</span>
+                <strong>15,000円</strong>
+              </div>
             </div>
 
-            <div class="ticketPriceBlock ticketPriceBlockSub">
-              <div class="ticketPriceLabel">当日</div>
-              <div class="ticketPriceMain small">15,000<span>円（税込）</span></div>
-            </div>
-
-            <ul class="ticketFeatures">
+            <ul class="ticketSeatList">
               <li>シート席</li>
               <li>ステージ最前エリア</li>
               <li>公式エコバッグ付き</li>
               <li>公式ステッカー付き</li>
+              <li>出演者寄せ書き複製色紙付き</li>
             </ul>
           </article>
 
-          <article class="ticketCard ticketCardA">
-            <div class="ticketCardBadge">A SEAT</div>
-            <h3 class="ticketCardTitle">A席</h3>
-            <p class="ticketCardLead">ステージ近距離エリア / ステージまで約7m</p>
+          <article class="ticketSeatCard ticketSeatCard--a">
+            <div class="ticketSeatLabel">A SEAT</div>
+            <h3 class="ticketSeatTitle">A席</h3>
+            <p class="ticketSeatLead">ステージ近距離エリア / ステージまで約7m</p>
 
-            <div class="ticketPriceBlock">
-              <div class="ticketPriceLabel">前売</div>
-              <div class="ticketPriceMain">8,800<span>円（税込）</span></div>
-              <div class="ticketPriceSub">税抜 8,000円</div>
+            <div class="ticketSeatPrice">
+              <div class="ticketSeatPriceBox">
+                <span class="ticketSeatPriceTag">前売</span>
+                <strong>8,800円</strong>
+              </div>
+              <div class="ticketSeatPriceBox ticketSeatPriceBox--sub">
+                <span class="ticketSeatPriceTag">当日</span>
+                <strong>10,000円</strong>
+              </div>
             </div>
 
-            <div class="ticketPriceBlock ticketPriceBlockSub">
-              <div class="ticketPriceLabel">当日</div>
-              <div class="ticketPriceMain small">10,000<span>円（税込）</span></div>
-            </div>
-
-            <ul class="ticketFeatures">
+            <ul class="ticketSeatList">
               <li>シート席</li>
               <li>ステージ近距離エリア</li>
               <li>公式ステッカー付き</li>
             </ul>
           </article>
 
-          <article class="ticketCard ticketCardStand">
-            <div class="ticketCardBadge">STANDING</div>
-            <h3 class="ticketCardTitle">立ち見席</h3>
-            <p class="ticketCardLead">後方フリー観覧エリア</p>
+          <article class="ticketSeatCard ticketSeatCard--stand">
+            <div class="ticketSeatLabel">STANDING</div>
+            <h3 class="ticketSeatTitle">立ち見席</h3>
+            <p class="ticketSeatLead">後方フリー観覧エリア</p>
 
-            <div class="ticketPriceBlock">
-              <div class="ticketPriceLabel">前売</div>
-              <div class="ticketPriceMain">3,300<span>円（税込）</span></div>
-              <div class="ticketPriceSub">税抜 3,000円</div>
+            <div class="ticketSeatPrice">
+              <div class="ticketSeatPriceBox">
+                <span class="ticketSeatPriceTag">前売</span>
+                <strong>3,300円</strong>
+              </div>
+              <div class="ticketSeatPriceBox ticketSeatPriceBox--sub">
+                <span class="ticketSeatPriceTag">当日</span>
+                <strong>3,500円</strong>
+              </div>
             </div>
 
-            <div class="ticketPriceBlock ticketPriceBlockSub">
-              <div class="ticketPriceLabel">当日</div>
-              <div class="ticketPriceMain small">3,500<span>円（税込）</span></div>
-            </div>
-
-            <ul class="ticketFeatures">
+            <ul class="ticketSeatList">
               <li>後方フリー観覧エリア</li>
               <li>気軽に楽しみたい方向け</li>
             </ul>
@@ -249,75 +231,75 @@
       </div>
     </section>
 
-    <!-- seat map -->
-    <section class="cfSection" id="seatmap">
+    <!-- SEAT MAP -->
+    <section class="cfSection ticketSection" id="seatmap">
       <div class="cfWrap">
         <div class="ticketSectionHead">
           <p class="ticketSectionSub">SEAT MAP</p>
           <h2 class="ticketSectionTitle">会場図</h2>
-          <p class="ticketSectionText">
-            S席・A席はシート席、立ち見席は後方エリアとなります。<br>
-            ステージとの距離やエリアの違いをご確認ください。
-          </p>
+        <p class="ticketSectionText">
+          S席・A席はシート席、立ち見席は後方エリアとなります。
+          ステージとの距離やエリアをご確認ください。
+        </p>
         </div>
 
-        <figure class="ticketSeatmap">
+        <figure class="ticketMapCard">
           <img src="./img/buifes-livearea.jpg" alt="ぶいふぇす 会場図 S席・A席・立ち見席の配置図" loading="lazy">
         </figure>
       </div>
     </section>
 
-    <!-- goods -->
-    <section class="cfSection">
+    <!-- BONUS -->
+    <section class="cfSection ticketSection">
       <div class="cfWrap">
         <div class="ticketSectionHead">
           <p class="ticketSectionSub">TICKET BONUS</p>
           <h2 class="ticketSectionTitle">特典グッズ</h2>
-          <p class="ticketSectionText">
-            S席ご購入の方には公式エコバッグと公式ステッカー、A席ご購入の方には公式ステッカーを当日会場にてお渡しします。
-          </p>
+          <!-- <p class="ticketSectionText ticketSectionText--bonus">
+            S席ご購入の方には公式エコバッグと公式ステッカーA席ご購入の方には公式ステッカーを当日会場にてお渡しします。
+          </p> -->
         </div>
 
-        <div class="ticketBonusGrid">
-          <article class="ticketBonusCard">
-            <div class="ticketBonusImg">
+        <div class="ticketBonusGridClean">
+          <article class="ticketBonusCardClean">
+            <div class="ticketBonusCardImg ticketBonusCardImg--bag">
               <img src="./img/buifes-ecobag.jpg" alt="ぶいふぇす公式エコバッグ イメージ" loading="lazy">
             </div>
-            <div class="ticketBonusBody">
+            <div class="ticketBonusCardBody">
               <h3>ぶいふぇす公式エコバッグ</h3>
               <p>S席特典</p>
             </div>
           </article>
 
-          <article class="ticketBonusCard">
-            <div class="ticketBonusImg">
+          <article class="ticketBonusCardClean">
+            <div class="ticketBonusCardImg ticketBonusCardImg--sticker">
               <img src="./img/buifes-sticker.jpg" alt="ぶいふぇす公式ステッカー イメージ" loading="lazy">
             </div>
-            <div class="ticketBonusBody">
+            <div class="ticketBonusCardBody">
               <h3>ぶいふぇす公式ステッカー</h3>
               <p>S席 / A席 特典</p>
             </div>
           </article>
         </div>
 
-        <div class="ticketGiftNote">
+        <div class="ticketGiftNoteClean">
           ※ デザインはイメージです。<br>
-          完成品は、特別出演のアイドル枠を除く出演者様全員をSDキャラにて掲載予定です。<br>
+          ※ 完成品は特別出演のアイドル枠を除く出演者様全員をSDキャラにて掲載予定です。<br>
           ※ 特典は当日会場にてお渡しします。
         </div>
       </div>
     </section>
 
-    <!-- notes -->
-    <section class="cfSection">
+    <!-- GUIDE -->
+    <section class="cfSection ticketSection">
       <div class="cfWrap">
         <div class="ticketSectionHead">
           <p class="ticketSectionSub">GUIDE</p>
           <h2 class="ticketSectionTitle">チケットに関するご案内</h2>
         </div>
 
-        <div class="ticketGuideBox">
-          <ul class="ticketGuideList">
+        <div class="ticketGuideCardClean">
+          <ul class="ticketGuideListClean">
             <li>当日券の販売は <strong>2026年5月5日</strong> を予定しております。</li>
             <li>前売券は当日券よりお得にご購入いただけます。</li>
             <li>購入後のキャンセル・返金は原則できません。</li>
@@ -327,7 +309,9 @@
         </div>
 
         <div class="ticketBottomCta">
-          <a class="cfBtn" href="#" target="_blank" rel="noopener noreferrer">TIGETで購入する</a>
+        <a class="cfBtn js-ticket-btn" href="#" target="_blank" rel="noopener noreferrer">
+          前売券をTIGETで購入する
+        </a>
         </div>
       </div>
     </section>
