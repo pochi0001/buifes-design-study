@@ -13124,7 +13124,7 @@ html{
 
 .floatingTicketWrap{
   position: fixed;
-  left: 18px;
+  right: 18px;
   bottom: 90px;
   z-index: 9999;
 }
@@ -13224,3 +13224,40 @@ html{
     font-size: 12px;
   }
 }
+
+@media (max-width: 700px){
+
+  .floatingTicketWrap{
+    right: 10px;
+    bottom: 70px;
+  }
+
+  .floatingTicketBtn{
+    width: 130px; /* ←ここが重要 */
+    padding: 8px 26px 8px 10px;
+    border-radius: 12px;
+    gap: 1px;
+  }
+
+  .floatingTicketMini{
+    display: none;
+  }
+
+  .floatingTicketMain{
+    font-size: 11px;
+  }
+
+  .floatingTicketArrow{
+    right: 8px;
+    font-size: 13px;
+  }
+
+  .floatingTicketClose{
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    top: -6px;
+    right: -6px;
+  }
+}
+
