@@ -7229,8 +7229,7 @@ main,
 }
 
 /* TOP FOOD 個別位置調整 */
-.cfCarousel .cfFoodTopThumb.cfFoodTopThumb--ichigo img,
-.cfCarousel .cfFoodTopThumb.cfFoodTopThumb--inase img{
+.cfCarousel .cfFoodTopThumb.cfFoodTopThumb--ichigo img{
 
   object-fit: contain !important;
   object-position: center center !important;
@@ -7284,12 +7283,6 @@ main,
   .cfCarousel .cfFoodTopThumb.cfFoodTopThumb--ichigo img{
     object-position: 66% center !important; /* 右に寄せる */
   }
-
-  /* 和処いなせ */
-  .cfCarousel .cfFoodTopThumb.cfFoodTopThumb--inase img{
-    object-position: 75% center !important; /* 左に寄せる */
-  }
-
 }
 
 /* =========================
