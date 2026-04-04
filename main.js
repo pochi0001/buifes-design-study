@@ -324,3 +324,4 @@ const TIGET_URL = "https://tiget.net/events/478236"; // ←ここに本番URL
 document.querySelectorAll(".js-ticket-btn").forEach(btn => {
   btn.href = TIGET_URL;
 });
+

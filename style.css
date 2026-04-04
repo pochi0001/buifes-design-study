@@ -13026,6 +13026,64 @@ html{
   opacity: 1 !important;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .cfHero--poster{
   position: relative;
   height: 70vh;
@@ -13058,4 +13116,111 @@ html{
 
   box-shadow: 0 20px 60px rgba(0,0,0,0.3);
   border-radius: 12px;
+}
+
+/* =========================
+   FLOATING TICKET（最終版）
+========================= */
+
+.floatingTicketWrap{
+  position: fixed;
+  left: 18px;
+  bottom: 90px;
+  z-index: 9999;
+}
+
+/* ボタン本体 */
+.floatingTicketBtn{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  width: 180px;
+  padding: 10px 36px 10px 12px;
+
+  border-radius: 14px;
+  border: 2px solid #1f1f1f;
+
+  background: linear-gradient(135deg, #f9a03f 0%, #79aee6 100%);
+  color: #1f1f1f;
+  text-decoration: none;
+
+  box-shadow:
+    0 8px 18px rgba(0,0,0,.14),
+    0 4px 0 #1f1f1f;
+
+  transition: all .18s ease;
+}
+
+/* ホバー */
+.floatingTicketBtn:hover{
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 20px rgba(0,0,0,.16),
+    0 4px 0 #1f1f1f;
+}
+
+/* 上の小ラベル */
+.floatingTicketMini{
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  opacity: .7;
+}
+
+/* メインテキスト */
+.floatingTicketMain{
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+/* 矢印 */
+.floatingTicketArrow{
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 900;
+}
+
+/* 閉じるボタン */
+.floatingTicketClose{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #1f1f1f;
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+/* スマホ */
+@media (max-width: 700px){
+  .floatingTicketWrap{
+    right: 12px;
+    bottom: 80px;
+  }
+
+  .floatingTicketBtn{
+    width: 160px;
+    padding: 9px 32px 9px 10px;
+  }
+
+  .floatingTicketMain{
+    font-size: 12px;
+  }
 }
