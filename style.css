@@ -9492,6 +9492,155 @@ main,
   }
 }
 
+
+/* =========================
+   TOP ARTISTS 17人対応
+   ========================= */
+
+#artist .cfWrap{
+  max-width: 1080px !important;
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+}
+
+#artist .cfArtistsGrid{
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  max-width: 980px !important;
+  margin: 0 auto !important;
+}
+
+#artist .cfArtistCard{
+  width: 100% !important;
+  box-shadow: 5px 5px 0 #1f1f1f !important;
+}
+
+#artist .cfArtistThumb{
+  aspect-ratio: 1 / 1 !important;
+  overflow: hidden !important;
+}
+
+#artist .cfArtistThumb img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+#artist .cfArtistBody{
+  padding: 10px 10px 12px !important;
+}
+
+#artist .cfArtistName{
+  font-size: 14px !important;
+  line-height: 1.45 !important;
+  letter-spacing: .01em !important;
+  white-space: normal !important;
+  word-break: keep-all !important;
+  overflow-wrap: anywhere !important;
+  text-align: center !important;
+}
+
+/* PCで17枚目を中央寄せ */
+.cfArtistCard--last{
+  grid-column: 2 / 4 !important;
+  max-width: 230px !important;
+  justify-self: center !important;
+}
+
+/* タブレット */
+@media (max-width: 1024px){
+  #artist .cfArtistsGrid{
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    max-width: 760px !important;
+    gap: 16px !important;
+  }
+
+  #artist .cfArtistName{
+    font-size: 13px !important;
+  }
+
+  .cfArtistCard--last{
+    grid-column: auto !important;
+    max-width: none !important;
+    justify-self: stretch !important;
+  }
+}
+
+/* スマホ */
+@media (max-width: 700px){
+  #artist .cfWrap{
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  #artist .cfArtistsGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    max-width: 100% !important;
+    gap: 14px !important;
+  }
+
+  #artist .cfArtistBody{
+    padding: 9px 8px 10px !important;
+  }
+
+  #artist .cfArtistName{
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
+
+  .cfArtistCard--featured::before{
+    top: 8px;
+    left: 8px;
+    min-height: 22px;
+    padding: 0 7px;
+    font-size: 9px;
+  }
+}
+
+#artist .cfArtistsGrid{
+  gap: 26px !important;
+}
+
+#artist .cfWrap{
+  padding-left: 28px !important;
+  padding-right: 28px !important;
+}
+
+@media (min-width: 1025px){
+  #artist .cfArtistsGrid{
+    gap: 32px !important;
+  }
+}
+
+/* =========================
+   TOP ARTISTS 調整
+   ========================= */
+
+#artist .cfArtistLead{
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 auto 20px !important;
+  text-align: center !important;
+}
+
+@media (max-width: 600px){
+  #artist .cfArtistsGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+  }
+
+  #artist .cfArtistsGrid .cfArtistCard:last-child{
+    grid-column: 1 / -1 !important;
+    max-width: 160px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+}
+
+
+
 /* =========================
    TICKET PAGE
 ========================= */
@@ -12804,7 +12953,7 @@ html{
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 22px;
+  margin-top: 22px; 
 }
 
 .topTicketPriceBtnWrap{
@@ -12825,3 +12974,62 @@ html{
   justify-content: center;
   margin-top: 22px;
 }
+
+/* =========================
+   TOP TICKET カード高さ揃え
+========================= */
+
+.topTicketPriceGrid{
+  align-items: stretch;
+}
+
+.topTicketPriceCard{
+  display: flex;
+  flex-direction: column;
+}
+
+/* 見出し部分を共通で少し高さ確保 */
+.topTicketPriceHead{
+  min-height: 100px;
+}
+
+/* 当日カードは下に寄せる */
+.topTicketPriceCard--day .topTicketPriceHead{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* スマホでは少し控えめ */
+@media (max-width: 700px){
+  .topTicketPriceHead{
+    min-height: 72px;
+  }
+}
+
+/* =========================
+   下層 TICKET ラベル調整
+========================= */
+
+/* 前売・当日のラベル共通 */
+.ticketSeatPriceBox .ticketSeatPriceTag{
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  letter-spacing: .08em !important;
+  display: inline-block;
+  margin-bottom: 8px !important;
+}
+
+/* 前売だけ強調 */
+.ticketSeatPriceBox:not(.ticketSeatPriceBox--sub) .ticketSeatPriceTag{
+  color: var(--orange) !important;
+  font-size: 15px !important;
+}
+
+/* 当日は落ち着かせる */
+.ticketSeatPriceBox--sub .ticketSeatPriceTag{
+  color: #1f1f1f !important;
+  font-size: 14px !important;
+  opacity: 1 !important;
+}
+
