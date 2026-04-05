@@ -13261,3 +13261,219 @@ html{
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   TICKET FAQ
+========================= */
+.ticketFaqList{
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
+}
+
+.ticketFaqItem{
+  background: #fff;
+  border: 3px solid #1f1f1f;
+  box-shadow: 6px 6px 0 #1f1f1f;
+  padding: 22px 22px 18px;
+}
+
+.ticketFaqQ,
+.ticketFaqA{
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.ticketFaqA{
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(0,0,0,.12);
+}
+
+.ticketFaqMark{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  min-height: 40px;
+  border: 2px solid #1f1f1f;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.ticketFaqQ .ticketFaqMark{
+  background: var(--orange);
+  color: #1f1f1f;
+}
+
+.ticketFaqA .ticketFaqMark{
+  background: #fff;
+  color: #1f1f1f;
+}
+
+.ticketFaqQ p,
+.ticketFaqA p{
+  margin: 0;
+}
+
+.ticketFaqQ p{
+  font-size: 18px;
+  line-height: 1.75;
+  font-weight: 800;
+  color: #1f1f1f;
+}
+
+.ticketFaqA div{
+  display: grid;
+  gap: 8px;
+}
+
+.ticketFaqA p{
+  font-size: 14px;
+  line-height: 1.9;
+  font-weight: 700;
+  color: rgba(0,0,0,.76);
+}
+
+@media (max-width: 700px){
+  .ticketFaqItem{
+    padding: 18px 16px 16px;
+    box-shadow: 4px 4px 0 #1f1f1f;
+  }
+
+  .ticketFaqQ,
+  .ticketFaqA{
+    grid-template-columns: 34px 1fr;
+    gap: 10px;
+  }
+
+  .ticketFaqMark{
+    width: 34px;
+    min-height: 34px;
+    font-size: 14px;
+  }
+
+  .ticketFaqQ p{
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .ticketFaqA p{
+    font-size: 13px;
+    line-height: 1.85;
+  }
+}
+
+.ticketSection#faq{
+  margin-bottom: 80px;
+}
+
+@media (max-width: 700px){
+  .ticketSection#faq{
+    margin-bottom: 60px;
+  }
+}
+
+.ticketSection#faq{
+  margin-top: 50px;   /* ←これで上を揃える */
+  margin-bottom: 80px;
+  padding-top: 0;     /* ←余計なズレ防止 */
+}
+
+@media (max-width: 700px){
+  .ticketSection#faq{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 700px){
+  .ticketFaqItem{
+    box-shadow: none; /* ←思い切って消す */
+    border: 2px solid #1f1f1f;
+  }
+}
+
+/* =========================
+   FAQ スマホはみ出し最終修正
+   必ず style.css の一番最後
+========================= */
+@media (max-width: 700px){
+
+  #faq .cfWrap{
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  .ticketFaqList{
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    gap: 14px !important;
+    box-sizing: border-box !important;
+  }
+
+  .ticketFaqItem{
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 16px 14px !important;
+    box-sizing: border-box !important;
+    border: 2px solid #1f1f1f !important;
+    box-shadow: none !important;
+    overflow: hidden !important;
+  }
+
+  .ticketFaqQ,
+  .ticketFaqA{
+    grid-template-columns: 32px minmax(0, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .ticketFaqMark{
+    width: 32px !important;
+    min-height: 32px !important;
+    font-size: 13px !important;
+  }
+
+  .ticketFaqQ p,
+  .ticketFaqA p{
+    min-width: 0 !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .ticketFaqQ p{
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+
+  .ticketFaqA p{
+    font-size: 12.5px !important;
+    line-height: 1.8 !important;
+  }
+}
