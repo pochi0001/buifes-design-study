@@ -13477,3 +13477,9 @@ html{
     line-height: 1.8 !important;
   }
 }
+
+.cfSponsorLogo--small{
+  width: 140px;
+  max-width: 100%;
+  height: auto;
+}
