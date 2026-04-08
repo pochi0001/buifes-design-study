@@ -13483,3 +13483,111 @@ html{
   max-width: 100%;
   height: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cfSponsorLogo--small{
+  width: 140px;
+  max-width: 100%;
+  height: auto;
+}
+
+.cfSponsorLogo--small{
+  width: 200px;
+  max-width: 90%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.cfSponsorLogo--small{
+  width: 200px;
+  max-width: 90%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* =========================
+   SPONSOR LOGO SIZE OVERRIDE
+   一番最後に置く
+========================= */
+.cfSponsorLogoPremium--main{
+  display: block !important;
+  width: 320px !important;
+  max-width: 90% !important;
+  height: auto !important;
+  margin: 0 auto 22px !important;
+}
+
+.cfSponsorLogoPremium{
+  display: block;
+  margin: 0 auto 18px;
+}
+
+.cfSponsorLogo{
+  display: block;
+  margin: 0 auto 16px;
+}
+
+.cfSponsorLogo--small{
+  width: 220px !important;
+  max-width: 80% !important;
+  height: auto !important;
+  margin-top: 12px !important;
+}
+
+.cfSponsorLogoPremium--main{
+  width: 300px !important;
+  max-width: 90% !important;
+  margin: 0 auto 18px !important;
+}
+
+.cfSponsorLogo--small{
+  width: 240px !important;
+  max-width: 82% !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
