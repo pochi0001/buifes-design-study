@@ -13587,7 +13587,37 @@ html{
 
 
 
+/* ===== 10万（最大） ===== */
+.cfSponsorLogoPremium--main{
+  width: 300px !important;
+  margin: 0 auto 18px;
+}
 
+/* ===== 10万（2番目） ===== */
+.cfSponsorLogoPremium{
+  width: 220px;
+  margin: 0 auto 18px;
+}
+
+/* ===== 5万（画像） ===== */
+.cfSponsorLogo{
+  width: 180px;
+  margin: 0 auto 16px;
+}
+
+/* ===== 5万（テキスト）←今回重要 ===== */
+.cfSponsorText--middle{
+  font-size: 18px;
+  font-weight: 700;
+  margin: 14px 0 18px;
+  text-align: center;
+}
+
+/* ===== 1万 ===== */
+.cfSponsorLogo--small{
+  width: 140px !important;
+  opacity: 0.9;
+}
 
 
 
