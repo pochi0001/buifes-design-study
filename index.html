@@ -138,33 +138,22 @@
   </div>
 
   <!-- HERO -->
-  <!-- <main>
-      <section class="cfHero" aria-label="トップビジュアル">
-        <h1 class="sr-only">
-          ぶいふぇす | MUSIC & FOOD FESTIVAL | 2026.05.05
-        </h1>
-
-        <div class="heroBg" aria-hidden="true"></div>
-
-        <div class="heroLogoArea">
-          <img
-            class="heroLogoImg"
-            src="./img/vfes-toplogo4.png"
-            alt="Vfes MUSIC & FOOD FESTIVAL 2026.05.05"
-            loading="lazy"
-          />
-        </div>
-      </section> -->
-
   <main>
-    <section class="cfHero cfHero--poster">
-      <img class="cfHeroBg" src="./img/buifes-top10.jpg" alt="" aria-hidden="true">
+    <section class="cfHero" aria-label="トップビジュアル">
+      <h1 class="sr-only">
+        ぶいふぇす | MUSIC & FOOD FESTIVAL | 2026.05.05
+      </h1>
 
-      <img
-        class="cfHeroPoster"
-        src="./img/buifes-top10.jpg"
-        alt="ぶいふぇす 2026 メインビジュアル"
-      />
+      <div class="heroBg" aria-hidden="true"></div>
+
+      <div class="heroLogoArea">
+        <img
+          class="heroLogoImg"
+          src="./img/vfes-toplogo4.png"
+          alt="Vfes MUSIC & FOOD FESTIVAL 2026.05.05"
+          loading="lazy"
+        />
+      </div>
     </section>
 
     <!-- タイル（下層ページへ） -->
@@ -683,10 +672,10 @@
           </div> -->
 
 
-          <div class="cfSponsorNormal">
+        <div class="cfSponsorNormal">
           <div class="cfSponsorLabel">協賛</div>
 
-            <!-- ★ 追加：最上位スポンサー -->
+           <!-- ★ 追加：最上位スポンサー -->
           <img
             src="./img/sponsor/grade.jpg"
             alt="株式会社グレイド"
@@ -705,9 +694,11 @@
             class="cfSponsorLogo"
           ><br>
 
-          <div class="cfSponsorText">
-            はねかわ太陽認定こども園（羽川幼稚園）
-          </div>
+          <img
+            src="./img/sponsor/hanekawa.png"
+            alt="はねかわ太陽認定こども園"
+            class="cfSponsorLogo cfSponsorLogo--middle"
+          >
 
           <img
             src="./img/sponsor/behome.jpg"
@@ -764,34 +755,10 @@
 
   <script src="./main.js?v=20260312-3"></script>
 
-<div class="floatingTicketWrap" id="floatingTicket">
-  <button type="button" class="floatingTicketClose" aria-label="閉じる">×</button>
-
-  <a
-    href="https://tiget.net/events/478236"
-    class="floatingTicketBtn"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="前売券を購入する"
-  >
-    <span class="floatingTicketMini">TICKET</span>
-    <span class="floatingTicketMain">前売券はこちら</span>
-    <span class="floatingTicketArrow" aria-hidden="true">↗</span>
+  <a href="./tickets.html" class="cfFloatingTicket" id="cfFloatingTicket">
+    <span class="cfFloatingTicketIcon">🎫</span>
+    <span class="cfFloatingTicketText">チケットはこちら</span>
   </a>
-</div>
-
-<script>
-  (() => {
-    const floatingCloseBtn = document.querySelector(".floatingTicketClose");
-    const floatingTicketWrap = document.getElementById("floatingTicket");
-
-    if (floatingCloseBtn && floatingTicketWrap) {
-      floatingCloseBtn.addEventListener("click", () => {
-        floatingTicketWrap.style.display = "none";
-      });
-    }
-  })();
-</script>
 
 </body>
 </html>
