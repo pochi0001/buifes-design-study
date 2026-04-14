@@ -13453,3 +13453,32 @@ html{
     font-size: 12px;
   }
 }
+
+
+/* =========================
+   STICKER IMAGE FINAL OVERRIDE
+   必ず一番最後
+========================= */
+.ticketBonusCardImg--sticker{
+  background: #eef7fb !important;
+  height: 420px !important;
+}
+
+.ticketBonusCardImg--sticker img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  display: block !important;
+  padding: 12px !important;
+}
+
+@media (max-width: 700px){
+  .ticketBonusCardImg--sticker{
+    height: 300px !important;
+  }
+
+  .ticketBonusCardImg--sticker img{
+    padding: 10px !important;
+  }
+}
