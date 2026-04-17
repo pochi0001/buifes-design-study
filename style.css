@@ -13658,3 +13658,30 @@ html{
   box-sizing: border-box;
 }
 
+.cfBtnOutline{
+  border-width: 2px;
+}
+
+.topTicketHeroBtns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.topTicketHeroBtns .ticketMainBtn,
+.topTicketHeroBtns .cfBtnOutline{
+  height: 60px !important;
+  min-height: 60px !important;
+  padding: 0 24px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  line-height: 1 !important;
+}
+
+.topTicketHeroBtns .cfBtnOutline{
+  border: 2px solid #1f1f1f !important;
+}
