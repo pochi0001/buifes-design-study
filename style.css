@@ -13639,3 +13639,22 @@ html{
 .ticketMainBtn span{
   text-align: center;
 }
+
+.topTicketHeroBtns{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.topTicketHeroBtns .ticketMainBtn,
+.topTicketHeroBtns .cfBtnOutline{
+  min-height: 60px;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
