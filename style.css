@@ -13627,3 +13627,15 @@ html{
   transform: translateY(-3px) scale(1.03);
   box-shadow: 0 15px 30px rgba(249,160,63,0.6);
 }
+
+.ticketMainBtn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.ticketMainBtn span{
+  text-align: center;
+}
