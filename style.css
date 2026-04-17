@@ -13685,3 +13685,62 @@ html{
 .topTicketHeroBtns .cfBtnOutline{
   border: 2px solid #1f1f1f !important;
 }
+
+/* =========================
+   飲食エリア利用チケット
+========================= */
+.ticketAreaNote{
+  max-width: 900px;
+  margin: 28px auto 0;
+  padding: 24px 26px 22px;
+  background: #fff;
+  border: 3px solid #1f1f1f;
+  box-shadow: 7px 7px 0 #1f1f1f;
+}
+
+.ticketAreaNoteTitle{
+  margin: 0 0 16px;
+  font-size: 28px;
+  line-height: 1.35;
+  font-weight: 900;
+  color: #1f1f1f;
+}
+
+.ticketAreaNoteText{
+  margin: 0 0 14px;
+  font-size: 15px;
+  line-height: 1.9;
+  font-weight: 700;
+  color: rgba(0,0,0,.76);
+}
+
+.ticketAreaNoteList{
+  margin: 0;
+  padding-left: 1.4em;
+  display: grid;
+  gap: 8px;
+}
+
+.ticketAreaNoteList li{
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 700;
+  color: rgba(0,0,0,.76);
+}
+
+@media (max-width: 700px){
+  .ticketAreaNote{
+    margin-top: 22px;
+    padding: 18px 16px 16px;
+    box-shadow: 5px 5px 0 #1f1f1f;
+  }
+
+  .ticketAreaNoteTitle{
+    font-size: 22px;
+  }
+
+  .ticketAreaNoteText,
+  .ticketAreaNoteList li{
+    font-size: 13px;
+  }
+}
