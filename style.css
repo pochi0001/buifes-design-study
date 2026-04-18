@@ -14094,3 +14094,25 @@ html{
   background: #000 !important;
   transform: translateY(-1px);
 }
+
+/* =========================
+   SPECIAL CONTENTS テキスト左揃え 強制版
+   必ずいちばん最後
+========================= */
+.cfSpecialGrid .cfSpecialMcBody{
+  text-align: left !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+
+.cfSpecialGrid .cfSpecialMcBody > *{
+  text-align: left !important;
+  align-self: flex-start !important;
+}
+
+.cfSpecialGrid .cfSpecialMcName,
+.cfSpecialGrid .cfSpecialMcRole,
+.cfSpecialGrid .cfSpecialMcDesc,
+.cfSpecialGrid .cfSpecialMcLabel{
+  text-align: left !important;
+}
