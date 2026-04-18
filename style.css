@@ -14116,3 +14116,12 @@ html{
 .cfSpecialGrid .cfSpecialMcLabel{
   text-align: left !important;
 }
+
+/* =========================
+   SPECIAL MC / AUDITION WINNER
+   カード内ラベルを青で統一
+========================= */
+.cfSpecialMcLabel,
+.cfSpecialMcLabel--audition{
+  color: #5DADEC !important;
+}
