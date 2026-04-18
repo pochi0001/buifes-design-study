@@ -13744,3 +13744,353 @@ html{
     font-size: 13px;
   }
 }
+
+/* =========================
+   SPECIAL CONTENTS
+   2カラム横並び版
+========================= */
+.cfSpecialGrid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.cfSpecialGrid .cfSpecialMcCard{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.cfSpecialGrid .cfSpecialMcThumb{
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-bottom: 3px solid #1f1f1f;
+}
+
+.cfSpecialGrid .cfSpecialMcThumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cfSpecialGrid .cfSpecialMcBody{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 26px 24px 24px;
+  min-height: 260px;
+}
+
+.cfSpecialGrid .cfSpecialMcName{
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.cfSpecialGrid .cfSpecialMcRole{
+  margin-bottom: 12px;
+}
+
+.cfSpecialGrid .cfSpecialMcDesc{
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.cfSpecialGrid .cfInstaBtn,
+.cfSpecialGrid .cfInstaBtn--x{
+  margin-top: auto;
+}
+
+.cfSpecialMcLabel--audition{
+  color: #5DADEC;
+}
+
+/* スマホでは縦積み */
+@media (max-width: 900px){
+  .cfSpecialGrid{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .cfSpecialGrid .cfSpecialMcBody{
+    min-height: auto;
+  }
+}
+
+.cfSpecialMc .cfSectionTitle{
+  font-size: clamp(28px, 3vw, 44px) !important;
+  letter-spacing: .08em !important;
+}
+
+
+
+
+
+/* =========================
+   SPECIAL CONTENTS 微調整
+========================= */
+
+/* セクション見出しを少しだけ控えめに */
+.cfSpecialMc .cfSectionTitle{
+  font-size: clamp(24px, 2.6vw, 38px) !important;
+  letter-spacing: .06em !important;
+  padding: 8px 20px !important;
+}
+
+/* カード全体 */
+.cfSpecialGrid{
+  max-width: 1060px;
+  margin: 0 auto;
+  gap: 22px;
+}
+
+/* 画像の見え方を整える */
+.cfSpecialGrid .cfSpecialMcThumb{
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.cfSpecialGrid .cfSpecialMcThumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 個別に見え方調整 */
+.cfSpecialGrid .cfSpecialMcCard:first-child .cfSpecialMcThumb img{
+  object-position: center center;
+}
+
+.cfSpecialGrid .cfSpecialMcCard:last-child .cfSpecialMcThumb img{
+  object-position: center top;
+}
+
+/* 本文エリア */
+.cfSpecialGrid .cfSpecialMcBody{
+  padding: 24px 24px 22px !important;
+  min-height: 250px;
+}
+
+.cfSpecialGrid .cfSpecialMcLabel{
+  font-size: 12px;
+  letter-spacing: .16em;
+}
+
+.cfSpecialGrid .cfSpecialMcName{
+  font-size: clamp(26px, 2.8vw, 38px) !important;
+  margin-bottom: 12px !important;
+}
+
+.cfSpecialGrid .cfSpecialMcRole{
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.cfSpecialGrid .cfSpecialMcDesc{
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+/* ボタン位置を揃えやすくする */
+.cfSpecialGrid .cfInstaBtn,
+.cfSpecialGrid .cfInstaBtn--x{
+  margin-top: auto;
+}
+
+/* スマホ */
+@media (max-width: 900px){
+  .cfSpecialMc .cfSectionTitle{
+    font-size: 26px !important;
+  }
+
+  .cfSpecialGrid .cfSpecialMcBody{
+    min-height: auto;
+    padding: 20px 18px 18px !important;
+  }
+
+  .cfSpecialGrid .cfSpecialMcName{
+    font-size: 22px !important;
+  }
+
+  .cfSpecialGrid .cfSpecialMcRole,
+  .cfSpecialGrid .cfSpecialMcDesc{
+    font-size: 13px;
+  }
+}
+
+/* =========================
+   SPECIAL CONTENTS 最終微調整
+========================= */
+
+/* 全体幅と余白 */
+.cfSpecialGrid{
+  max-width: 1020px;
+  margin: 0 auto;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* カード */
+.cfSpecialGrid .cfSpecialMcCard{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+}
+
+/* 画像エリアを少しだけ低く */
+.cfSpecialGrid .cfSpecialMcThumb{
+  aspect-ratio: 1 / 0.9;
+  overflow: hidden;
+  border-bottom: 3px solid #1f1f1f;
+}
+
+/* 画像の見え方 */
+.cfSpecialGrid .cfSpecialMcThumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 左：おかもとまり */
+.cfSpecialGrid .cfSpecialMcCard:first-child .cfSpecialMcThumb img{
+  object-position: center 32%;
+}
+
+/* 右：こふな瀬。 */
+.cfSpecialGrid .cfSpecialMcCard:last-child .cfSpecialMcThumb img{
+  object-position: center 24%;
+}
+
+/* 本文 */
+.cfSpecialGrid .cfSpecialMcBody{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 22px 24px;
+  min-height: 250px;
+}
+
+.cfSpecialGrid .cfSpecialMcLabel{
+  font-size: 12px;
+  letter-spacing: .16em;
+  margin-bottom: 10px;
+}
+
+.cfSpecialGrid .cfSpecialMcName{
+  font-size: clamp(28px, 2.5vw, 40px);
+  line-height: 1.2;
+  margin: 0 0 14px;
+}
+
+.cfSpecialGrid .cfSpecialMcRole{
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.cfSpecialGrid .cfSpecialMcDesc{
+  margin: 0 0 18px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* ボタンを少しだけ自然に */
+.cfSpecialGrid .cfInstaBtn,
+.cfSpecialGrid .cfInstaBtn--x{
+  margin-top: auto;
+}
+
+/* 見出し */
+.cfSpecialMc .cfSectionTitle{
+  font-size: clamp(24px, 2.8vw, 38px) !important;
+  padding: 8px 20px !important;
+  letter-spacing: .06em !important;
+}
+
+/* スマホ */
+@media (max-width: 900px){
+  .cfSpecialGrid{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .cfSpecialGrid .cfSpecialMcThumb{
+    aspect-ratio: 1 / 0.9;
+  }
+
+  .cfSpecialGrid .cfSpecialMcBody{
+    min-height: auto;
+    padding: 20px 18px 20px;
+  }
+
+  .cfSpecialGrid .cfSpecialMcName{
+    font-size: 24px;
+  }
+
+  .cfSpecialGrid .cfSpecialMcRole,
+  .cfSpecialGrid .cfSpecialMcDesc{
+    font-size: 13px;
+  }
+}
+
+/* =========================
+   SPECIAL CONTENTS
+   ラベルだけ目立たせる版
+========================= */
+
+.cfSpecialGrid .cfSpecialMcLabel{
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  margin: 0 0 14px !important;
+
+  background: linear-gradient(135deg, #f6b15b 0%, #ef8f63 100%);
+  color: #fff !important;
+
+  font-size: 14px !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+  letter-spacing: .12em !important;
+
+  border-radius: 999px;
+  box-shadow: 0 6px 14px rgba(239, 143, 99, .28);
+}
+
+.cfSpecialGrid .cfSpecialMcLabel--audition{
+  background: linear-gradient(135deg, #f3c76a 0%, #f6a85f 100%);
+  color: #fff !important;
+}
+
+@media (max-width: 700px){
+  .cfSpecialGrid .cfSpecialMcLabel{
+    min-height: 30px;
+    padding: 0 10px;
+    font-size: 12px !important;
+    margin-bottom: 12px !important;
+  }
+}
+
+/* Xボタンだけ黒にする */
+.cfInstaBtn--x{
+  background: #111 !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25) !important;
+}
+
+/* ホバーでちょい強く */
+.cfInstaBtn--x:hover{
+  background: #000 !important;
+  transform: translateY(-1px);
+}
