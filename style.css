@@ -14157,3 +14157,183 @@ html{
     font-size: 13px;
   }
 }
+
+/* =========================
+   SPONSOR AREA FINAL
+========================= */
+.cfSponsorArea{
+  text-align: center;
+}
+
+.cfSponsorNormal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cfSponsorLabel{
+  margin-bottom: 22px;
+}
+
+.cfSponsorBlock{
+  width: 100%;
+  margin-top: 56px;
+}
+
+.cfSponsorBlock:first-of-type{
+  margin-top: 24px;
+}
+
+.cfSponsorSubTitle{
+  margin: 0 0 24px;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  color: rgba(0,0,0,.42);
+  text-align: center;
+}
+
+/* ロゴまわり */
+.cfSponsorNormal > a,
+.cfSponsorNormal > br{
+  display: block;
+}
+
+.cfSponsorLogoPremium,
+.cfSponsorLogo{
+  margin-bottom: 26px;
+}
+
+/* 法人・個人の文字一覧 */
+.cfSponsorTextList{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.cfSponsorTextList--company{
+  margin-top: px;
+  margin-bottom: 12px;
+}
+
+.cfSponsorTextList--personal{
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+.cfSponsorTextItem,
+.cfSponsorTextLink{
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+/* 法人の方を少し強め */
+.cfSponsorTextList--company .cfSponsorTextItem,
+.cfSponsorTextList--company .cfSponsorTextLink{
+  font-size: 24px;
+  line-height: 1.55;
+  font-weight: 900;
+  letter-spacing: .03em;
+}
+
+/* 個人は少し軽く */
+.cfSponsorTextList--personal .cfSponsorTextItem{
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: 700;
+  color: rgba(0,0,0,.82);
+}
+
+.cfSponsorTextLink{
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.cfSponsorTextLink:hover{
+  opacity: .72;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 700px){
+  .cfSponsorBlock{
+    margin-top: 42px;
+  }
+
+  .cfSponsorSubTitle{
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  .cfSponsorTextList--company{
+    margin-top: 26px;
+  }
+
+  .cfSponsorTextList--company .cfSponsorTextItem,
+  .cfSponsorTextList--company .cfSponsorTextLink{
+    font-size: 18px;
+  }
+
+  .cfSponsorTextList--personal .cfSponsorTextItem{
+    font-size: 16px;
+  }
+}
+
+.cfSponsorSubTitle{
+  font-size: 14px;
+  letter-spacing: .18em;
+  color: rgba(0,0,0,.4);
+}
+
+.cfSponsorTextList--personal .cfSponsorTextItem{
+  font-size: 18px;
+  font-weight: 600;
+  opacity: .8;
+}
+
+/* 青木工務店・東伸のブロック */
+.cfSponsorStack{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px; /* ←これが余白の正体（超重要） */
+  margin: 40px 0;
+}
+
+/* 小さめロゴ */
+.cfSponsorLogoSmall{
+  max-width: 10px;
+  height: auto;
+  display: block;
+  opacity: 0.9;
+  transition: all .2s ease;
+}
+
+/* ホバーでちょい浮かす（高級感） */
+.cfSponsorLogoSmall:hover{
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.cfSponsorTextLink--logo{
+  display: inline-block;
+  margin-bottom: 32px !important;
+}
+
+.cfSponsorTextLink--logo img{
+  display: block;
+}
+
+.cfSponsorTextLink--toshin{
+  display: inline-block;
+  margin-top: 8px !important;
+}
+
+/* 青木工務店ロゴサイズ調整 */
+.cfSponsorTextLink--logo img{
+  width: 180px;  
+  max-width: 80%;
+  height: auto;
+}
