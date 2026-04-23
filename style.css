@@ -14478,3 +14478,33 @@ html{
     margin-top: 64px !important;
   }
 }
+
+/* =========================
+   ロゴ微調整（美ホーム / 青木）
+========================= */
+
+/* 美ホーム：少しだけ大きく */
+.cfSponsorLogo--behome{
+  transform: scale(1.4);
+  transform-origin: center;
+}
+
+/* 青木：少し強めに大きく */
+.cfSponsorTextLink--logo img,
+.cfSponsorLogo--aoki{
+  transform: scale(1.4);
+  transform-origin: center;
+}
+
+/* スマホはさらに気持ち強めでもOK */
+@media (max-width: 700px){
+
+  .cfSponsorLogo--behome{
+    transform: scale(1.3);
+  }
+
+  .cfSponsorTextLink--logo img,
+  .cfSponsorLogo--aoki{
+    transform: scale(1.55);
+  }
+}
