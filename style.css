@@ -14212,11 +14212,6 @@ html{
   gap: 10px;
 }
 
-.cfSponsorTextList--company{
-  margin-top: px;
-  margin-bottom: 12px;
-}
-
 .cfSponsorTextList--personal{
   margin-top: 6px;
   margin-bottom: 8px;
@@ -14302,15 +14297,6 @@ html{
   margin: 40px 0;
 }
 
-/* 小さめロゴ */
-.cfSponsorLogoSmall{
-  max-width: 10px;
-  height: auto;
-  display: block;
-  opacity: 0.9;
-  transition: all .2s ease;
-}
-
 /* ホバーでちょい浮かす（高級感） */
 .cfSponsorLogoSmall:hover{
   opacity: 1;
@@ -14336,4 +14322,159 @@ html{
   width: 180px;  
   max-width: 80%;
   height: auto;
+}
+
+/* =========================
+   協賛 5を少し大きく見せる
+========================= */
+.cfSponsorLogo--high{
+  display: block;
+  margin: 0 auto 34px;
+  transform: scale(1.18);
+  transform-origin: center;
+}
+
+/* 5勢の次、1へ入る前の余白 */
+.cfSponsorLogo--high:last-of-type{
+  margin-bottom: 52px;
+}
+
+/* スマホは少し控えめ */
+@media (max-width: 700px){
+  .cfSponsorLogo--high{
+    transform: scale(1.08);
+    margin-bottom: 26px;
+  }
+
+  .cfSponsorLogo--high:last-of-type{
+    margin-bottom: 38px;
+  }
+}
+
+/* =========================
+   一番最後に追加
+========================= */
+@media (max-width: 700px){
+
+  /* 5勢 */
+  .cfSponsorLogo.cfSponsorLogo--high{
+    transform: scale(1.30) !important;
+    transform-origin: center !important;
+    margin-top: 10px !important;
+    margin-bottom: 50px !important;
+  }
+
+  /* 5勢の中でも2つの間隔を少し広げる */
+  .cfSponsorLogo.cfSponsorLogo--high + br{
+    display: block;
+    content: "";
+  }
+
+  /* 1法人ブロックの入りをしっかり空ける */
+  .cfSponsorTextList--company{
+    margin-top: 20px !important;
+  }
+
+  /* 青木ロゴ */
+  .cfSponsorTextLink--logo{
+    display: inline-block !important;
+    margin-bottom: 50px !important;
+  }
+
+  .cfSponsorTextLink--logo img{
+    width: 150px !important;
+    max-width: 70% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  /* 東伸 */
+  .cfSponsorTextLink--toshin{
+    display: inline-block !important;
+    margin-top: 6px !important;
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+    font-weight: 900 !important;
+    margin-bottom: 30px !important;
+  }
+
+  /* 個人協賛との間も少し広げる */
+  .cfSponsorBlock + .cfSponsorBlock{
+    margin-top: 42px !important;
+  }
+
+  /* 個人協賛見出しは少し控えめ */
+  .cfSponsorTextList--personal .cfSponsorTextItem{
+    font-size: 17px !important;
+    line-height: 1.7 !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   PC 法人協賛 余白コントロール（最終仕上げ）
+========================= */
+@media (min-width: 701px){
+
+  /* 法人協賛ブロック全体の呼吸 */
+  .cfSponsorBlock{
+    margin-top: 64px !important;
+  }
+
+  /* 見出しと中身の間 */
+  .cfSponsorSubTitle{
+    margin-bottom: 32px !important;
+  }
+
+  /* ロゴ1個ごとの間隔（基本） */
+  .cfSponsorLogo{
+    display: block;
+    margin: 0 auto 34px !important;
+  }
+
+  /* グレイド（メイン）は少し余裕持たせる */
+  .cfSponsorLogoPremium--main{
+    margin-bottom: 42px !important;
+  }
+
+  /* HOOD LUCKも少し余白強め */
+  .cfSponsorLogoPremium{
+    margin-bottom: 40px !important;
+  }
+
+  /* 5万円勢（てつか・はねかわ） */
+  .cfSponsorLogo--high{
+    margin-bottom: 60px !important;
+  }
+
+  /* 1万円勢に入る前の“区切り” */
+  .cfSponsorTextList--company{
+    margin-top: 0px !important;
+  }
+
+  /* 青木ロゴ */
+  .cfSponsorTextLink--logo{
+    display: inline-block;
+    margin-bottom: 50px !important;
+  }
+
+  /* 東伸 */
+  .cfSponsorTextLink--toshin{
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 20px !important;;
+  }
+
+  /* 法人→個人の切り替え */
+  .cfSponsorBlock + .cfSponsorBlock{
+    margin-top: 64px !important;
+  }
 }
