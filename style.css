@@ -14125,3 +14125,35 @@ html{
 .cfSpecialMcLabel--audition{
   color: #5DADEC !important;
 }
+
+/* =========================
+   協賛（文字のみ追加分）
+========================= */
+.cfSponsorTextList{
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.cfSponsorTextItem{
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #1f1f1f;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+@media (max-width: 700px){
+  .cfSponsorTextList{
+    margin-top: 0px;
+    gap: 20px;
+  }
+
+  .cfSponsorTextItem{
+    font-size: 13px;
+  }
+}
