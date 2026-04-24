@@ -29118,3 +29118,88 @@ html{
   display: block !important;
   margin: 30px auto 68px !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   協賛ロゴ スマホ最強調整版
+========================= */
+@media (max-width: 700px){
+
+  .cfSponsorArea,
+  .cfSponsorNormal,
+  .cfSponsorBlock,
+  .cfSponsorTextList{
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .cfSponsorArea img{
+    max-width: 78vw !important;
+    height: auto !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transform: none !important;
+  }
+
+  /* グレイド */
+  .cfSponsorArea img[src*="grade"]{
+    width: 280px !important;
+    margin-top: 28px !important;
+    margin-bottom: 40px !important;
+  }
+
+  /* HOOD LUCK */
+  .cfSponsorArea img[src*="hoodluck"]{
+    width: 240px !important;
+    margin-bottom: 50px !important;
+  }
+
+  /* てつか歯科医院 */
+  .cfSponsorArea img[src*="tetukasika"]{
+    width: 185px !important;
+    margin-bottom: 65px !important;
+  }
+
+  /* はねかわ太陽認定こども園 */
+  .cfSponsorArea img[src*="hanekawa"]{
+    width: 210px !important;
+    margin-bottom: 80px !important;
+  }
+
+  /* 美ホーム */
+  .cfSponsorArea img[src*="behome"]{
+    width: 180px !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* 青木工務店 */
+  .cfSponsorArea img[src*="aoki"]{
+    width: 160px !important;
+    margin-bottom: 0px !important;
+  }
+
+  /* 東伸塗装 */
+  .cfSponsorArea img[src*="tousin"]{
+    width: 120px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .cfSponsorTextList--company{
+    gap: 0 !important;
+    margin-top: 18px !important;
+  }
+}
