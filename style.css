@@ -29203,3 +29203,21 @@ html{
     margin-top: 18px !important;
   }
 }
+
+/* 駅東ラッコ整形外科 */
+.cfSponsorLogo--rakko{
+  width: 280px !important;
+  max-width: 70vw !important;
+  height: auto !important;
+  display: block !important;
+  margin: 10px auto 60px !important;
+}
+
+/* スマホ */
+@media (max-width: 700px){
+  .cfSponsorLogo--rakko{
+    width: 215px !important;
+    max-width: 74vw !important;
+    margin: 60px auto 58px !important;
+  }
+}
