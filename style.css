@@ -29261,3 +29261,21 @@ html{
 
   background: #fff !important;
 }
+
+/* 関東実行センター：5万円協賛 */
+.cfSponsorLogo--kanto{
+  width: 365px !important;
+  max-width: 80vw !important;
+  height: auto !important;
+  display: block !important;
+  margin: 100px auto 110px !important;
+}
+
+/* スマホ */
+@media (max-width: 700px){
+  .cfSponsorLogo--kanto{
+    width: 270px !important;
+    max-width: 82vw !important;
+    margin: 50px auto 62px !important;
+  }
+}
