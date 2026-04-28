@@ -29291,3 +29291,13 @@ html{
 
   background: #fff !important;
 }
+
+
+.cfSponsorNote{
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  letter-spacing: .04em;
+  margin: 8px 0 26px;
+  line-height: 1.7;
+}
