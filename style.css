@@ -29248,3 +29248,16 @@ html{
     border-radius: 10px;
   }
 }
+
+
+
+
+.cfFoodTopThumb img[src*="ippinkou3"]{
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: contain !important;
+  object-position: center center !important;
+
+  background: #fff !important;
+}
