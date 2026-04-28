@@ -29170,25 +29170,25 @@ html{
 
   /* てつか歯科医院 */
   .cfSponsorArea img[src*="tetukasika"]{
-    width: 185px !important;
-    margin-bottom: 65px !important;
+    width: 220px !important;
+    margin-bottom: 100px !important;
   }
 
   /* はねかわ太陽認定こども園 */
   .cfSponsorArea img[src*="hanekawa"]{
-    width: 210px !important;
-    margin-bottom: 80px !important;
+    width: 240px !important;
+    margin-bottom: 120px !important;
   }
 
   /* 美ホーム */
   .cfSponsorArea img[src*="behome"]{
-    width: 180px !important;
+    width: 160px !important;
     margin-bottom: 10px !important;
   }
 
   /* 青木工務店 */
   .cfSponsorArea img[src*="aoki"]{
-    width: 160px !important;
+    width: 150px !important;
     margin-bottom: 0px !important;
   }
 
@@ -29203,6 +29203,36 @@ html{
     margin-top: 18px !important;
   }
 }
+
+
+/* 関東実行センター：5万円協賛 */
+.cfSponsorLogo--kanto{
+  width: 365px !important;
+  max-width: 80vw !important;
+  height: auto !important;
+  display: block !important;
+  margin: 100px auto 110px !important;
+}
+
+/* スマホ */
+@media (max-width: 700px){
+  .cfSponsorLogo--kanto{
+    width: 240px !important;
+    max-width: 82vw !important;
+    margin: 50px auto 62px !important;
+    margin-bottom: 100px !important;
+  }
+}
+
+@media (max-width: 700px){
+  .cfSponsorNormal .cfSponsorBlock img[src*="kantojikkousenta"]{
+    width: 245px !important;
+    max-width: 82vw !important;
+    margin: 50px auto 100px !important;
+  }
+}
+
+
 
 /* 駅東ラッコ整形外科 */
 .cfSponsorLogo--rakko{
@@ -29260,22 +29290,4 @@ html{
   object-position: center center !important;
 
   background: #fff !important;
-}
-
-/* 関東実行センター：5万円協賛 */
-.cfSponsorLogo--kanto{
-  width: 365px !important;
-  max-width: 80vw !important;
-  height: auto !important;
-  display: block !important;
-  margin: 100px auto 110px !important;
-}
-
-/* スマホ */
-@media (max-width: 700px){
-  .cfSponsorLogo--kanto{
-    width: 220px !important;
-    max-width: 82vw !important;
-    margin: 50px auto 62px !important;
-  }
 }
