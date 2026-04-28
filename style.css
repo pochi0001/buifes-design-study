@@ -29089,12 +29089,12 @@ html{
   max-width: 82vw !important;
   height: auto !important;
   display: block !important;
-  margin: 0 auto 120px !important;
+  margin: 0 auto 110px !important;
 }
 
 /* 美ホーム */
 .cfSponsorArea img[src*="behome"]{
-  width: 170px !important;
+  width: 150px !important;
   max-width: 62vw !important;
   height: auto !important;
   display: block !important;
@@ -29103,7 +29103,7 @@ html{
 
 /* 青木工務店 */
 .cfSponsorArea img[src*="aoki"]{
-  width: 150px !important;
+  width: 140px !important;
   max-width: 72vw !important;
   height: auto !important;
   display: block !important;
@@ -29240,7 +29240,7 @@ html{
   max-width: 70vw !important;
   height: auto !important;
   display: block !important;
-  margin: 10px auto 60px !important;
+  margin: 10px auto 20px !important;
 }
 
 /* スマホ */
@@ -29248,9 +29248,98 @@ html{
   .cfSponsorLogo--rakko{
     width: 215px !important;
     max-width: 74vw !important;
-    margin: 60px auto 58px !important;
+    margin: 60px auto 20px !important;
   }
 }
+
+/* 1万円協賛 追加分 */
+.cfSponsorLogo--nijiiro{
+  width: 130px !important;
+  max-width: 70vw !important;
+  height: auto !important;
+  display: block !important;
+  margin: 55px auto 45px !important;
+}
+
+.cfSponsorLogo--oyamanisiguti{
+  width: 160px !important;
+  max-width: 72vw !important;
+  height: auto !important;
+  display: block !important;
+  margin: 35px auto 35px !important;
+}
+
+.cfSponsorLogo--oyamaseinenn{
+  width: 330px !important;
+  max-width: 74vw !important;
+  height: auto !important;
+  display: block !important;
+  margin: 35px auto 45px !important;
+}
+
+.cfSponsorLogo--doragakutu{
+  width: 240px !important;
+  max-width: 72vw !important;
+  height: auto !important;
+  display: block !important;
+  margin: 45px auto 45px !important;
+}
+
+.cfSponsorLogo--cororado{
+  width: 360x !important;
+  max-width: 72vw !important;
+  height: auto !important;
+  display: block !important;
+  margin: 45px auto 70px !important;
+}
+
+/* スマホ */
+@media (max-width: 700px){
+  .cfSponsorLogo--nijiiro{
+    width: 100px !important;
+    max-width: 78vw !important;
+    margin: 45px auto 38px !important;
+  }
+
+  .cfSponsorLogo--oyamanisiguti{
+    width: 120px !important;
+    max-width: 82vw !important;
+    margin: 32px auto 32px !important;
+  }
+
+  .cfSponsorLogo--oyamaseinenn{
+    width: 250px !important;
+    max-width: 84vw !important;
+    margin: 32px auto 38px !important;
+  }
+
+  .cfSponsorLogo--doragakutu{
+    width: 180px !important;
+    max-width: 82vw !important;
+    margin: 38px auto 38px !important;
+  }
+
+  .cfSponsorLogo--cororado{
+    width: 250px !important;
+    max-width: 82vw !important;
+    margin: 38px auto 60px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .cfTimetableBox{
   max-width: 700px;
