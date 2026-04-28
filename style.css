@@ -29274,7 +29274,7 @@ html{
 /* スマホ */
 @media (max-width: 700px){
   .cfSponsorLogo--kanto{
-    width: 270px !important;
+    width: 220px !important;
     max-width: 82vw !important;
     margin: 50px auto 62px !important;
   }
