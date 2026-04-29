@@ -29058,7 +29058,7 @@ html{
 
 /* グレイド */
 .cfSponsorArea img[src*="grade"]{
-  width: 370px !important;
+  width: 340px !important;
   max-width: 86vw !important;
   height: auto !important;
   display: block !important;
@@ -29067,7 +29067,7 @@ html{
 
 /* HOOD LUCK */
 .cfSponsorArea img[src*="hoodluck"]{
-  width: 290px !important;
+  width: 280px !important;
   max-width: 80vw !important;
   height: auto !important;
   display: block !important;
@@ -29358,22 +29358,13 @@ html{
   align-items: center !important;
 }
 
-/* エス・ピー・関西 */
-.cfSponsorLogo--esupi{
-  width: 520px !important;
-  max-width: 82vw !important;
-  height: auto !important;
-  display: block !important;
-  margin: 40px auto 90px !important;
-}
-
 /* タイラ */
 .cfSponsorLogo--taira{
-  width: 430px !important;
+  width: 440px !important;
   max-width: 78vw !important;
   height: auto !important;
   display: block !important;
-  margin: 0 auto 30px !important;
+  margin: 0 auto 130px !important;
 }
 
 /* 法人協賛 */
@@ -29412,7 +29403,7 @@ html{
   .cfSponsorLogo--taira{
     width: 250px !important;
     max-width: 84vw !important;
-    margin: 0 auto 24px !important;
+    margin: 0 auto 80px !important;
   }
 
   .cfSponsorLogoPremium--main{
