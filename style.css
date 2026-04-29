@@ -29058,7 +29058,7 @@ html{
 
 /* グレイド */
 .cfSponsorArea img[src*="grade"]{
-  width: 380px !important;
+  width: 370px !important;
   max-width: 86vw !important;
   height: auto !important;
   display: block !important;
@@ -29067,7 +29067,7 @@ html{
 
 /* HOOD LUCK */
 .cfSponsorArea img[src*="hoodluck"]{
-  width: 300px !important;
+  width: 290px !important;
   max-width: 80vw !important;
   height: auto !important;
   display: block !important;
@@ -29076,7 +29076,7 @@ html{
 
 /* てつか歯科医院 */
 .cfSponsorArea img[src*="tetukasika"]{
-  width: 310px !important;
+  width: 280px !important;
   max-width: 82vw !important;
   height: auto !important;
   display: block !important;
@@ -29085,7 +29085,7 @@ html{
 
 /* はねかわ太陽認定こども園 */
 .cfSponsorArea img[src*="hanekawa"]{
-  width: 330px !important;
+  width: 300px !important;
   max-width: 82vw !important;
   height: auto !important;
   display: block !important;
@@ -29132,7 +29132,7 @@ html{
 
 
 /* =========================
-   協賛ロゴ スマホ最強調整版
+   協賛ロゴ スマホ調整版
 ========================= */
 @media (max-width: 700px){
 
@@ -29157,44 +29157,44 @@ html{
 
   /* グレイド */
   .cfSponsorArea img[src*="grade"]{
-    width: 280px !important;
+    width: 180px !important;
     margin-top: 28px !important;
     margin-bottom: 40px !important;
   }
 
   /* HOOD LUCK */
   .cfSponsorArea img[src*="hoodluck"]{
-    width: 240px !important;
+    width: 170px !important;
     margin-bottom: 50px !important;
   }
 
   /* てつか歯科医院 */
   .cfSponsorArea img[src*="tetukasika"]{
-    width: 220px !important;
+    width: 140px !important;
     margin-bottom: 100px !important;
   }
 
   /* はねかわ太陽認定こども園 */
   .cfSponsorArea img[src*="hanekawa"]{
-    width: 240px !important;
+    width: 160px !important;
     margin-bottom: 120px !important;
   }
 
   /* 美ホーム */
   .cfSponsorArea img[src*="behome"]{
-    width: 160px !important;
+    width: 140px !important;
     margin-bottom: 10px !important;
   }
 
   /* 青木工務店 */
   .cfSponsorArea img[src*="aoki"]{
-    width: 150px !important;
+    width: 135px !important;
     margin-bottom: 0px !important;
   }
 
   /* 東伸塗装 */
   .cfSponsorArea img[src*="tousin"]{
-    width: 110px !important;
+    width: 90px !important;
     margin-bottom: 20px !important;
   }
 
@@ -29205,9 +29205,9 @@ html{
 }
 
 
-/* 関東実行センター：5万円協賛 */
+/* 関東実行センター */
 .cfSponsorLogo--kanto{
-  width: 365px !important;
+  width: 320px !important;
   max-width: 80vw !important;
   height: auto !important;
   display: block !important;
@@ -29217,7 +29217,7 @@ html{
 /* スマホ */
 @media (max-width: 700px){
   .cfSponsorLogo--kanto{
-    width: 240px !important;
+    width: 100px !important;
     max-width: 82vw !important;
     margin: 50px auto 62px !important;
     margin-bottom: 100px !important;
@@ -29226,7 +29226,7 @@ html{
 
 @media (max-width: 700px){
   .cfSponsorNormal .cfSponsorBlock img[src*="kantojikkousenta"]{
-    width: 245px !important;
+    width: 180px !important;
     max-width: 82vw !important;
     margin: 50px auto 100px !important;
   }
@@ -29246,13 +29246,13 @@ html{
 /* スマホ */
 @media (max-width: 700px){
   .cfSponsorLogo--rakko{
-    width: 215px !important;
+    width: 170px !important;
     max-width: 74vw !important;
     margin: 60px auto 20px !important;
   }
 }
 
-/* 1万円協賛 追加分 */
+/* 協賛 追加分 */
 .cfSponsorLogo--nijiiro{
   width: 130px !important;
   max-width: 70vw !important;
@@ -29296,31 +29296,31 @@ html{
 /* スマホ */
 @media (max-width: 700px){
   .cfSponsorLogo--nijiiro{
-    width: 100px !important;
+    width: 80px !important;
     max-width: 78vw !important;
     margin: 45px auto 38px !important;
   }
 
   .cfSponsorLogo--oyamanisiguti{
-    width: 120px !important;
+    width: 110px !important;
     max-width: 82vw !important;
     margin: 32px auto 32px !important;
   }
 
   .cfSponsorLogo--oyamaseinenn{
-    width: 250px !important;
+    width: 200px !important;
     max-width: 84vw !important;
     margin: 32px auto 38px !important;
   }
 
   .cfSponsorLogo--doragakutu{
-    width: 180px !important;
+    width: 150px !important;
     max-width: 82vw !important;
     margin: 38px auto 38px !important;
   }
 
   .cfSponsorLogo--cororado{
-    width: 250px !important;
+    width: 200px !important;
     max-width: 82vw !important;
     margin: 38px auto 60px !important;
   }
@@ -29332,11 +29332,100 @@ html{
 
 
 
+/* 協賛見出し */
+.cfCreditLabel,
+.cfSponsorSubTitle{
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  letter-spacing: .12em !important;
+}
 
+/* 特別協賛だけ強め */
+.cfSponsorSpecial .cfSponsorSubTitle{
+  font-size: 20px !important;
+  margin-bottom: 38px !important;
+}
 
+/* 特別協賛エリア */
+.cfSponsorSpecial{
+  text-align: center !important;
+  margin: 90px auto 110px !important;
+}
 
+.cfSponsorSpecialList{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
 
+/* エス・ピー・関西 */
+.cfSponsorLogo--esupi{
+  width: 520px !important;
+  max-width: 82vw !important;
+  height: auto !important;
+  display: block !important;
+  margin: 40px auto 90px !important;
+}
 
+/* タイラ */
+.cfSponsorLogo--taira{
+  width: 430px !important;
+  max-width: 78vw !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto 30px !important;
+}
+
+/* 法人協賛 */
+.cfSponsorLogoPremium--main{
+  width: 390px !important;
+  max-width: 76vw !important;
+}
+
+.cfSponsorLogoPremium{
+  width: 320px !important;
+  max-width: 72vw !important;
+}
+
+/* スマホ */
+@media (max-width: 700px){
+  .cfCreditLabel,
+  .cfSponsorSubTitle{
+    font-size: 14px !important;
+  }
+
+  .cfSponsorSpecial .cfSponsorSubTitle{
+    font-size: 17px !important;
+    margin-bottom: 28px !important;
+  }
+
+  .cfSponsorSpecial{
+    margin: 70px auto 85px !important;
+  }
+
+  .cfSponsorLogo--esupi{
+    width: 300px !important;
+    max-width: 86vw !important;
+    margin: 34px auto 70px !important;
+  }
+
+  .cfSponsorLogo--taira{
+    width: 250px !important;
+    max-width: 84vw !important;
+    margin: 0 auto 24px !important;
+  }
+
+  .cfSponsorLogoPremium--main{
+    width: 300px !important;
+    max-width: 82vw !important;
+    color: #e28c2f;
+  }
+
+  .cfSponsorLogoPremium{
+    width: 260px !important;
+    max-width: 78vw !important;
+  }
+}
 
 
 
@@ -29390,3 +29479,4 @@ html{
   margin: 8px 0 26px;
   line-height: 1.7;
 }
+
