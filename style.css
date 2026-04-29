@@ -29170,13 +29170,13 @@ html{
 
   /* てつか歯科医院 */
   .cfSponsorArea img[src*="tetukasika"]{
-    width: 140px !important;
+    width: 150px !important;
     margin-bottom: 100px !important;
   }
 
   /* はねかわ太陽認定こども園 */
   .cfSponsorArea img[src*="hanekawa"]{
-    width: 160px !important;
+    width: 180px !important;
     margin-bottom: 120px !important;
   }
 
@@ -29207,7 +29207,7 @@ html{
 
 /* 関東実行センター */
 .cfSponsorLogo--kanto{
-  width: 320px !important;
+  width: 330px !important;
   max-width: 80vw !important;
   height: auto !important;
   display: block !important;
@@ -29217,7 +29217,7 @@ html{
 /* スマホ */
 @media (max-width: 700px){
   .cfSponsorLogo--kanto{
-    width: 100px !important;
+    width: 120px !important;
     max-width: 82vw !important;
     margin: 50px auto 62px !important;
     margin-bottom: 100px !important;
