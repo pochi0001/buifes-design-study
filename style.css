@@ -29177,7 +29177,7 @@ html{
   /* はねかわ太陽認定こども園 */
   .cfSponsorArea img[src*="hanekawa"]{
     width: 180px !important;
-    margin-bottom: 120px !important;
+    margin-bottom: 110px !important;
   }
 
   /* 美ホーム */
@@ -29217,7 +29217,7 @@ html{
 /* スマホ */
 @media (max-width: 700px){
   .cfSponsorLogo--kanto{
-    width: 120px !important;
+    width: 150px !important;
     max-width: 82vw !important;
     margin: 50px auto 62px !important;
     margin-bottom: 100px !important;
@@ -29226,7 +29226,7 @@ html{
 
 @media (max-width: 700px){
   .cfSponsorNormal .cfSponsorBlock img[src*="kantojikkousenta"]{
-    width: 180px !important;
+    width: 200px !important;
     max-width: 82vw !important;
     margin: 50px auto 100px !important;
   }
